@@ -1,3 +1,7 @@
+<script setup>
+import UnderConstruction from '@/components/UnderConstruction.vue';
+</script>
+
 <template>
   <div class="bg-white py-6 sm:py-8 lg:py-12">
     <div class="mx-auto max-w-screen-lg px-4 md:px-8">
@@ -14,8 +18,7 @@
 
         <!-- image - start -->
         <div class="relative h-80 overflow-hidden rounded-lg bg-gray-100 md:h-auto">
-          <img src="../assets/images/under-construction.svg" srcset="../assets/images/under-construction.svg 2x"
-            loading="lazy" alt="Photo by @heydevn" class="absolute inset-0 h-full w-full object-cover object-center" />
+          <UnderConstruction />
         </div>
         <!-- image - end -->
       </div>
