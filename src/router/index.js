@@ -6,10 +6,15 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'Home',
       component: HomeView
     }
   ]
+})
+
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title || "Nabilah Argyanti's Portfolio"
+  next()
 })
 
 export default router
