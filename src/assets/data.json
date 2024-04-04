@@ -1,0 +1,42 @@
+{
+  "profile": {
+    "name": "John Doe",
+    "address": "123 Main Street, Cityville",
+    "profileImage": "https://example.com/profile.jpg"
+  },
+  "skills": [
+    {
+      "image_url": "https://example.com/image1.png",
+      "title": "Dark Mode",
+      "description": "Filler text is dummy text which has no meaning however looks very similar to real text."
+    },
+    {
+      "image_url": "https://example.com/image2.png",
+      "title": "Responsive Design",
+      "description": "Another filler text for another skill description."
+    },
+    {
+      "image_url": "https://example.com/image2.png",
+      "title": "Responsive Design",
+      "description": "Another filler text for another skill description."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Project 1",
+      "image": "https://picsum.photos/id/1/400/300",
+      "tags": ["Web", "Mobile", "UI/UX"],
+      "description": "Description of Project 1",
+      "slug": "web-dev-test",
+      "demo": "https://example.com/project1-demo"
+    },
+    {
+      "title": "Project 2",
+      "image": "https://picsum.photos/id/1/400/300",
+      "tags": ["Web", "Backend", "API"],
+      "description": "Description of Project 2",
+      "slug": "detail",
+      "demo": "https://example.com/project2-demo"
+    }
+  ]
+}
