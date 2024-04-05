@@ -65,7 +65,7 @@
 
         <div class="grid gap-x-4 gap-y-6 sm:grid-cols-2 md:gap-x-6 lg:grid-cols-3">
             <ProjectCard v-for="(project, index) in projects" :key="index" :image_url="project.image" :tags="project.tags"
-                :title="project.title" :description="project.description" />
+                :title="project.title" :description="project.description" :slug="project.slug" />
         </div>
         <div class="flex justify-center my-10">
             <a href="#"
