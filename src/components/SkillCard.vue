@@ -1,25 +1,30 @@
 <template>
     <!-- skill - start -->
-    <div class="flex gap-4 md:gap-6">
-        <div
-            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-            </svg>
-        </div>
-
-        <div>
-            <h3 class="mb-2 text-lg font-semibold md:text-xl">{{ title }}</h3>
-            <p class="mb-2 text-gray-500">{{ description }}</p>
+    <div class="pb-4 flex gap-3">
+        <Icon icon="mdi:star"
+            class="flex items-center justify-center p-1.5 w-7 h-7 text-primary rounded-full bg-accent overflow-visible" />
+        <div class="flex flex-col gap-1">
+            <h2 class="text-xl font-semibold text-primary">Frontend</h2>
+            <p class="text-gray-600">Jelaskan kalau di skill ini kamu bisa buat apa saja (misal: bisa
+                bikin app responsive, kalau di backend bisa bikin REST API dan GraphQL)</p>
+            <ul class="list-disc list-inside text-gray-600">
+                <li>Laravel</li>
+                <li>Laravel</li>
+                <li>Laravel</li>
+                <li>Laravel</li>
+            </ul>
         </div>
     </div>
     <!-- skill - end -->
 </template>
 
 <script>
+import { Icon } from '@iconify/vue';
 
 export default {
+    components: {
+        Icon,
+    },
     props: {
         title: String,
         description: String,

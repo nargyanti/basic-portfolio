@@ -1,12 +1,13 @@
 <template>
-    <header class="flex items-center justify-center py-4 md:py-8">
+    <header class="flex items-center justify-center py-5">
         <!-- nav - start -->
-        <nav class="gap-4 md:gap-12 flex">
-            <a href="/"
-                class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Home</a>
-            <a href="#" class="inline-flex items-center gap-1 text-lg font-semibold text-indigo-500">Projects</a>
-            <a href="#"
-                class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">About</a>
+        <nav class="flex gap-10">
+            <a href="/" class="text-base font-medium text-gray-600 transition duration-100 hover:underline">Home</a>
+            <a href="#about" class="text-base font-medium text-gray-600 transition duration-100 hover:underline">About</a>
+            <a href="#projects"
+                class="text-base font-medium text-gray-600 transition duration-100 hover:underline">Projects</a>
+            <a href="#contact"
+                class="text-base font-medium text-gray-600 transition duration-100 hover:underline">Contact</a>
         </nav>
         <!-- nav - end -->
     </header>

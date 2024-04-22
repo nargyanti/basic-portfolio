@@ -1,84 +1,81 @@
 <template>
     <!-- hero - start -->
-    <section class="mb-8 flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:mb-16 lg:flex-row">
-        <!-- content - start -->
-        <div
-            class="flex flex-col items-center justify-center sm:text-center lg:items-start lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
-            <h1 class="text-center mb-8 text-4xl font-bold text-black sm:text-5xl md:mb-12 md:text-6xl lg:text-left">Nabilah
-                Argyanti Ardyningrum
+    <section class="pb-4 flex gap-10">
+        <img src="https://i.pravatar.cc/512?img=5" alt="Profile Picture" class="rounded-full w-36 h-36 hidden md:block">
+        <div class="flex flex-col gap-4">
+            <h1 class="text-3xl font-bold text-center text-primary">Hi there! I'm <span class="block underline">Nabilah
+                    Argyanti</span>
             </h1>
-
-            <p class="mb-8 text-center leading-relaxed text-gray-500 md:mb-12 lg:text-left lg:w-4/5 xl:text-lg">This is a
-                section of some simple filler text, also known as placeholder text. It shares some characteristics of a real
-                written text but is random.
-            </p>
-
-            <div class="flex flex-row gap-2.5 justify-center lg:justify-start">
-                <a href="#"
-                    class="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">About
-                    me</a>
-
-                <a href="#"
-                    class="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">Download
-                    CV</a>
-            </div>
+            <p class="text-base text-gray-600 text-justify">I am a Informatics Engineering graduate with a passion for
+                web development. I've worked on various web projects through internships, volunteering, contracts, and
+                freelancing. Currently, I'm diving into Laravel and Vue.js. I'm excited to keep learning and contribute to
+                tech innovation.</p>
         </div>
-        <!-- content - end -->
-
-        <!-- image - start -->
-        <div class="hidden h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:block lg:h-auto xl:w-5/12">
-            <img src="https://images.unsplash.com/photo-1620206343767-7da98185edd4?auto=format&q=75&fit=crop&w=1000"
-                loading="lazy" alt="Fakurian Design" class="h-full w-full object-cover object-center" />
-        </div>
-        <!-- image - end -->
     </section>
     <!-- hero - end -->
 
-    <!-- what can i do - start -->
-    <section class="mb-8 lg:mb-12">
-        <!-- text - start -->
-        <div class="mb-10 md:mb-16">
-            <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">What I Do</h2>
-            <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">This is a section of some simple
-                filler text, also known as placeholder text. It shares some characteristics of a real written text
-                but is random or otherwise generated.</p>
+    <!-- about - start -->
+    <section id="about" class="pt-3">
+        <!-- tech skill - start -->
+        <div class="">
+            <h2 class="text-2xl font-bold text-primary pb-3">Technical Skills</h2>
+            <SkillCard />
+            <SkillCard />
         </div>
-        <!-- text - end -->
-
-        <div class="grid gap-8 sm:grid-cols-2 md:gap-12 xl:grid-cols-3 xl:gap-16">
-            <SkillCard v-for="(skill, index) in skills" :key="index" :title="skill.title"
-                :description="skill.description" />
+        <!-- tech skill - end -->
+        <!-- work experience - start -->
+        <div class="">
+            <h2 class="text-2xl font-bold text-primary pb-3">Work Experience</h2>
+            <Timeline />
         </div>
+        <!-- work experience - end -->
     </section>
-    <!-- what can i do - end -->
+    <!-- about  - end -->
 
     <!-- projects - start -->
-    <section id="projects" class="mb-8 lg:mb-12">
-        <!-- text - start -->
-        <div class="mb-10 md:mb-16">
-            <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">Projects</h2>
-            <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">This is a section of some simple
-                filler text, also known as placeholder text. It shares some characteristics of a real written text but is
-                random or otherwise generated.</p>
+    <section id="projects" class="py-5 flex flex-col gap-4">
+        <div class="text-center">
+            <h2 class="text-2xl font-bold text-primary">Projects</h2>
+            <p class="py-2 text-gray-600 max-w-screen-md mx-auto">This is a section of some simple filler text, also known
+                as placeholder text. It shares some characteristics of a real written text but is random or otherwise
+                generated.</p>
         </div>
-        <!-- text - end -->
-
-        <div class="grid gap-x-4 gap-y-6 sm:grid-cols-2 md:gap-x-6 lg:grid-cols-3">
-            <ProjectCard v-for="(project, index) in projects" :key="index" :image_url="project.image" :tags="project.tags"
+        <div class="grid gap-x-6 gap-y-6 sm:grid-cols-2 md:gap-x-6 lg:grid-cols-3">
+            <ProjectCard v-for="(project, index) in projects" :key="index" :image="project.image" :tags="project.tags"
                 :title="project.title" :description="project.description" :slug="project.slug" />
         </div>
-        <div class="flex justify-center my-10">
-            <a href="#"
-                class="inline-block rounded-lg border bg-white px-4 py-2 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">Show
-                more</a>
+        <div class="mx-auto">
+            <button @click="$router.push('/projects')"
+                class="inline-block rounded-lg bg-accent px-4 py-3 text-center text-base font-medium text-primary transition duration-100 hover:bg-primary hover:text-light">
+                Show more
+            </button>
         </div>
-
     </section>
     <!-- projects - start -->
+
+    <!-- get in touch - start -->
+    <section id="contact" class="py-4 flex flex-col gap-4">
+        <h2 class="text-xl font-bold text-primary text-center">Get In Touch</h2>
+        <p class="text-gray-600 text-center">Lorem ipsum dolor sit amet. Aku nggak tau apa terusannya. Pokoknya klo minat
+            kerja sama
+            bisa hubungi saya </p>
+        <div class="flex gap-4 justify-center">
+            <button @click="$router.push('/projects')"
+                class="rounded-lg bg-primary px-4 py-3 text-center text-base font-medium text-light transition duration-100 hover:bg-primary hover:text-light">
+                Contact
+            </button>
+            <button @click="$router.push('/projects')"
+                class="rounded-lg bg-accent px-4 py-3 text-center text-base font-medium text-primary transition duration-100 hover:bg-primary hover:text-light">
+                Resume
+            </button>
+        </div>
+    </section>
+    <!-- get in touch - end -->
 </template>
 
 <script>
 import ProjectCard from '@/components/ProjectCard.vue';
+import Timeline from '@/components/Timeline.vue';
 import jsonData from '@/assets/data.json';
 import SkillCard from '@/components/SkillCard.vue';
 
@@ -93,6 +90,7 @@ export default {
         };
     },
     components: {
+        Timeline,
         ProjectCard,
         SkillCard,
     },
