@@ -1,29 +1,78 @@
 {
     "profile": {
-        "name": "John Doe",
-        "address": "123 Main Street, Cityville",
-        "profileImage": "https://example.com/profile.jpg",
+        "name": "Nabilah Argyanti",
+        "bio": "As a graduate of Informatics Engineering, I have a keen interest in web development and data science. With one year of industry experience, I am skilled in developing web applications. Currently, I am exploring innovative solutions using web technologies and studying the application of data science to solve problems. My skills include proficiency in Laravel and exploration of technologies such as Vue.js, Inertia, Tailwind, and data processing with Python.",
         "accounts": [
             "linkedin",
             "instagram",
             "facebook"
         ]
     },
-    "skills": [
+    "education": {
+        "institution": "Politeknik Negeri Malang",
+        "icon": "teenyicons:school-solid",
+        "degree": "Applied Bachelor of Informatics Engineering",
+        "year": "2019-2023",
+        "thesis": "Thesis: Recipes Recommendation System Based on Ingredients Availability and User Preferences",
+        "subjects": [
+            "Web Development",
+            "Data Science",
+            "Software Engineering"
+        ]
+    },
+    "technical_skills": [
         {
-            "image_url": "https://example.com/image1.png",
-            "title": "Dark Mode",
-            "description": "Filler text is dummy text which has no meaning however looks very similar to real text."
+            "icon": "material-symbols:web",
+            "category": "Web Development",
+            "description": "I'm experienced in web development, crafting dynamic applications, managing CRUD operations proficiently, and addressing diverse web-based requirements adeptly.",
+            "skills": [
+                "HTML",
+                "CSS",
+                "VueJS",
+                "Laravel",
+                "Django",
+                "WordPress"
+            ]
         },
         {
-            "image_url": "https://example.com/image2.png",
-            "title": "Responsive Design",
-            "description": "Another filler text for another skill description."
+            "icon": "mdi:database-cog",
+            "category": "Data Science",
+            "description": "I'm capable of analyzing data using various algorithms and techniques in data science to derive valuable insights and predictive solutions.",
+            "skills": [
+                "Python",
+                "Jupyter Notebook",
+                "Pandas",
+                "Tensorflow"
+            ]
+        }
+    ],
+    "work_experience": [
+        {
+            "icon": "ic:sharp-home-work",
+            "title": "Programmer at UPA TIK Politeknik Negeri Malang",
+            "period": "September 2023 - June 2024",
+            "jobdesk": [
+                "Developing the official website and the Public Information Disclosure Portal (PPID) for Politeknik Negeri Malang using WordPress and Elementor",
+                "Designing and developing an E-office website for digital correspondence within Politeknik Negeri Malang using Laravel"
+            ]
         },
         {
-            "image_url": "https://example.com/image2.png",
-            "title": "Responsive Design",
-            "description": "Another filler text for another skill description."
+            "icon": "ic:sharp-home-work",
+            "title": "Backend Developer at PT Adma Digital Solusi",
+            "period": "August 2022 - December 2022",
+            "jobdesk": [
+                "Managing recipe data and ingredients to recommend recipes using Python",
+                "Developing a recipe recommendation application based on ingredient availability using Django"
+            ]
+        },
+        {
+            "icon": "ic:sharp-home-work",
+            "title": "Web Developer at Awesome Language Stability",
+            "period": "September 2021 - November 2021",
+            "jobdesk": [
+                "Designing and developing a TOEFL prediction website using the CodeIgniter framework",
+                "Collaborating with the project team to integrate necessary services in the development of the TOEFL prediction website, ensuring its accuracy and reliability"
+            ]
         }
     ],
     "projects": [
