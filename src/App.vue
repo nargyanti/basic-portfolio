@@ -1,13 +1,12 @@
 <script setup>
-import { RouterView } from "vue-router";
+import { RouterLink, RouterView } from "vue-router";
+import { ref } from "vue";
 import { Icon } from "@iconify/vue";
 import IconWrapper from "@/components/IconWrapper.vue";
 import NavLink from "@/components/NavLink.vue";
 import data from "@/assets/data.json";
 
 const { profile } = data;
-
-import { ref } from "vue";
 
 const showMenu = ref(false);
 
@@ -23,7 +22,7 @@ const toggleMenu = () => {
             class="mx-auto flex max-w-screen-xl flex-col items-center md:px-10 px-6 py-5 drop-shadow-sm md:flex-row md:justify-between">
             <div class="flex w-full items-center justify-between md:w-auto">
                 <!-- Logo::start -->
-                <RouterLink :to="{ name: 'home' }" class="text-lg font-semibold text-gray-700 md:text-xl">nargyanti<span
+                <RouterLink :to="{ path: '/' }" class="text-lg font-semibold text-gray-700 md:text-xl">nargyanti<span
                         class="text-primary">.</span></RouterLink>
                 <!-- Logo::end -->
 
@@ -37,10 +36,10 @@ const toggleMenu = () => {
             <!-- Navigation::start -->
             <nav :class="{ hidden: !showMenu }"
                 class="flex flex-col gap-4 pt-6 text-center md:flex md:flex-row md:gap-10 md:pt-0">
-                <NavLink :to="{ name: 'home' }" label="Home" />
-                <NavLink :to="{ name: 'home' }" hash="#about" label="About" />
-                <NavLink :to="{ name: 'home' }" hash="#projects" label="Projects" />
-                <NavLink :to="{ name: 'home' }" hash="#contact" label="Contact" />
+                <NavLink :to="{ path: '/' }" label="Home" />
+                <NavLink :to="{ path: '/', hash: '#about' }" label="About" />
+                <NavLink :to="{ path: '/', hash: '#projects' }" label="Projects" />
+                <NavLink :to="{ path: '/', hash: '#contact' }" label="Contact" />
             </nav>
             <!-- Navigation::end -->
         </div>

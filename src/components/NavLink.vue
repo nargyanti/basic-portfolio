@@ -11,16 +11,11 @@ const props = defineProps({
         type: String,
         required: true,
     },
-    hash: {
-        type: String,
-        default: '',
-    }
 });
 </script>
 
 <template>
-    <RouterLink :to="{ ...to, hash: hash }"
-        class="font-semibold text-gray-600 transition duration-100 hover:text-primary hover:underline">
+    <RouterLink :to="to" class="font-semibold text-gray-600 transition duration-100 hover:text-primary hover:underline">
         {{ label }}
     </RouterLink>
 </template>
