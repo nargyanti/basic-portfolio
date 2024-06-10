@@ -13,8 +13,7 @@
     "education": {
         "institution": "Politeknik Negeri Malang",
         "icon": "teenyicons:school-solid",
-        "degree": "Applied Bachelor of Informatics Engineering",
-        "year": "2019-2023",
+        "degree": "Applied Bachelor of Informatics Engineering (2019-2023)",
         "thesis": "Thesis: Recipes Recommendation System Based on Ingredients Availability and User Preferences",
         "subjects": [
             "Web Development",
