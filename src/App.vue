@@ -17,9 +17,8 @@ const toggleMenu = () => {
 
 <template>
     <!-- Header::start -->
-    <header class="sticky top-0 z-50 border-b border-b-gray-200 bg-light">
-        <div
-            class="mx-auto flex max-w-screen-xl flex-col items-center md:px-10 px-6 py-5 drop-shadow-sm md:flex-row md:justify-between">
+    <header class="sticky top-0 z-50 border-b border-b-gray-200 bg-light px-6 py-5 md:px-10">
+        <div class="mx-auto flex max-w-screen-xl flex-col items-center drop-shadow-sm md:flex-row md:justify-between">
             <div class="flex w-full items-center justify-between md:w-auto">
                 <!-- Logo::start -->
                 <RouterLink :to="{ path: '/' }" class="text-lg font-semibold text-gray-700 md:text-xl">nargyanti<span
@@ -51,8 +50,8 @@ const toggleMenu = () => {
     <!-- View::end -->
 
     <!-- Footer::start -->
-    <footer class="bg-primary border-t border-t-gray-200">
-        <div class="mx-auto flex max-w-screen-xl flex-col gap-4 px-6 py-5 md:flex-row md:justify-between md:px-10">
+    <footer class="border-t border-t-gray-200 bg-primary px-6 py-5 md:px-10">
+        <div class="mx-auto flex max-w-screen-xl flex-col gap-4 md:flex-row md:justify-between">
             <p class="text-center text-white">
                 © 2024 Nabilah Argyanti. All rights reserved.
             </p>

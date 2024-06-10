@@ -46,7 +46,7 @@ const { profile, education, technical_skills, work_experience, projects } =
     <!-- Hero::end -->
 
     <!-- About::start -->
-    <section id="about" class="bg-light px-6 py-14">
+    <section id="about" class="bg-light px-6 py-14 md:px-10">
         <div class="mx-auto flex max-w-screen-xl flex-col gap-14 md:flex-row md:justify-between lg:gap-20">
             <!-- Background::start -->
             <div class="flex flex-col gap-14">
@@ -83,7 +83,7 @@ const { profile, education, technical_skills, work_experience, projects } =
     <!-- About::End -->
 
     <!-- Projects::start -->
-    <section id="projects" class="bg-light px-6 py-14">
+    <section id="projects" class="bg-light px-6 py-14 md:px-10">
         <div class="mx-auto max-w-screen-xl">
             <SectionTitle :title="'Projects Showcase'"
                 :sub_title="`These are projects I've completed, providing effective solutions to diverse problems.`" />
@@ -105,7 +105,7 @@ const { profile, education, technical_skills, work_experience, projects } =
     <!-- Projects::end -->
 
     <!-- CTA::start -->
-    <section id="contact" class="bg-primary px-6 py-16">
+    <section id="contact" class="bg-primary px-6 py-16 md:px-10">
         <div class="mx-auto flex max-w-screen-xl flex-col items-center justify-center gap-4">
             <h2 class="text-4xl font-bold text-white">Let's Collaborate!</h2>
             <p class="text-center text-lg text-white">
