@@ -2,11 +2,13 @@
     "profile": {
         "name": "Nabilah Argyanti",
         "bio": "As a graduate of Informatics Engineering, I have a keen interest in web development and data science. With one year of industry experience, I am skilled in developing web applications. Currently, I am exploring innovative solutions using web technologies and studying the application of data science to solve problems. My skills include proficiency in Laravel and exploration of technologies such as Vue.js, Inertia, Tailwind, and data processing with Python.",
-        "accounts": [
-            "linkedin",
-            "instagram",
-            "facebook"
-        ]
+        "resume_url": "#",
+        "email": "mailto:nargyanti@gmail.com",
+        "accounts": {
+            "github": "https://github.com/nargyanti",
+            "linkedin": "https://www.linkedin.com/in/nargyanti/",
+            "instagram": "https://www.instagram.com/nargyanti"
+        }
     },
     "education": {
         "institution": "Politeknik Negeri Malang",
@@ -78,11 +80,11 @@
     "projects": [
         {
             "title": "Sistem Informasi Politeknik Negeri Malang",
-            "image": "https://dummyimage.com/600x400/E8F0F3",
-            "tags": [
-                "laravel",
-                "bootstrap",
-                "mysql"
+            "image": "https://lh4.googleusercontent.com/DzNngvGh7KkBNbrREmEE-6mEbSlVl7Vkm7JB1CUybacupHyC4xFGyUz2SW51r3pCpUp_R72GPjC9u0ifC8V0kg6lPMpsD7AUQH7VkZ-xht7Z0NZUodICX5VI4zHfca5yltqVPgXLhKc",
+            "Tools": [
+                "Laravel",
+                "Bootstrap",
+                "MySQL"
             ],
             "description": "Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa.",
             "slug": "sisfo-polinema",
@@ -90,7 +92,7 @@
         },
         {
             "title": "Project 2",
-            "image": "https://dummyimage.com/1600x900/E8F0F3",
+            "image": "https://themes.getbootstrap.com/wp-content/uploads/2018/06/purpose-website-ui-kit-v2.0.0-cover-1200x900.png",
             "tags": [
                 "python",
                 "django",
@@ -102,7 +104,7 @@
         },
         {
             "title": "Project 3",
-            "image": "https://dummyimage.com/1600x900/E8F0F3",
+            "image": "https://glints.com/id/lowongan/wp-content/uploads/2020/07/uimovement.jpg",
             "tags": [
                 "python",
                 "django",
@@ -114,7 +116,7 @@
         },
         {
             "title": "Project 4",
-            "image": "https://dummyimage.com/1600x900/E8F0F3",
+            "image": "https://www.uxdesigninstitute.com/blog/wp-content/uploads/2022/06/34_Builtin-1.png",
             "tags": [
                 "python",
                 "django",

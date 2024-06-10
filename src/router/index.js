@@ -1,17 +1,16 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "@/views/Home.vue";
 import ProjectDetail from "@/views/ProjectDetail.vue";
-import jsonData from "@/assets/data.json";
 
 const routes = [
     {
         path: "/",
-        name: "Home",
+        name: "home",
         component: Home,
     },
     {
-        path: "/project/:slug",
-        name: "ProjectDetail",
+        path: "/project/",
+        name: "project_detail",
         component: ProjectDetail,
         props: true,
     },
@@ -27,13 +26,13 @@ router.beforeEach((to, from, next) => {
     next();
 });
 
-jsonData.projects.forEach((project) => {
-    routes.push({
-        path: `/projects/${project.slug}`,
-        name: `Project - ${project.title}`,
-        component: ProjectDetail,
-        props: { projectData: project },
-    });
-});
+// jsonData.projects.forEach((project) => {
+//     routes.push({
+//         path: `/projects/${project.slug}`,
+//         name: `Project - ${project.title}`,
+//         component: ProjectDetail,
+//         props: { projectData: project },
+//     });
+// });
 
 export default router;

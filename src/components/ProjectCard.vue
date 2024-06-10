@@ -1,63 +1,33 @@
-<template>
-    <!-- project - start -->
-    <div class="overflow-hidden rounded-lg border border-secondary">
-        <img
-            :src="image"
-            loading="lazy"
-            :alt="title"
-            class="aspect-video object-cover object-top transition duration-200"
-        />
+<script setup>
+import { Icon } from "@iconify/vue";
+import { RouterLink } from "vue-router";
 
-        <div class="flex flex-col gap-9 p-5">
-            <div class="flex flex-col gap-3">
-                <h3
-                    class="text-center text-lg font-semibold text-primary transition duration-100"
-                >
+const props = defineProps({
+    image: String,
+    title: String,
+    description: String,
+    slug: String,
+});
+</script>
+
+<template>
+    <!-- Project::start -->
+    <div class="flex flex-col overflow-hidden rounded-lg border border-gray-200 h-full">
+        <img :src="image" loading="lazy" :alt="title"
+            class="aspect-video object-cover object-top transition duration-200" />
+
+        <div class="flex flex-col justify-between flex-grow px-7 py-5 gap-1">
+            <div class="flex-grow">
+                <h3 class="text-xl font-semibold text-gray-700">
                     {{ title }}
                 </h3>
-                <p class="text-justify text-gray-600">{{ description }}</p>
+                <p class="pt-4 text-gray-600">{{ description }}</p>
             </div>
-
-            <div class="flex justify-between">
-                <div class="flex justify-start gap-1">
-                    <Icon
-                        v-for="(tag, index) in tags"
-                        :key="index"
-                        class="flex h-7 w-7 items-center justify-center overflow-visible rounded-full bg-secondary p-1.5 text-primary"
-                        :icon="`simple-icons:${tag}`"
-                        style="width: 1.75rem; height: 1.75rem"
-                    />
-                </div>
-                <router-link
-                    :to="`/project/${slug}`"
-                    class="font-semibold text-primary hover:underline"
-                    >Detail
-                    <Icon
-                        icon="mdi:arrow-right-thin"
-                        width="1.2em"
-                        height="1.2em"
-                        class="inline"
-                    />
-                </router-link>
-            </div>
+            <RouterLink :to="{ name: 'home' }" class="self-end text-right font-semibold text-primary hover:underline">
+                Detail
+                <Icon icon="mdi:arrow-right-thin" width="1.2em" height="1.2em" class="inline" />
+            </RouterLink>
         </div>
     </div>
-    <!-- project - end -->
+    <!-- Project::end-->
 </template>
-
-<script>
-import { Icon } from "@iconify/vue";
-
-export default {
-    components: {
-        Icon,
-    },
-    props: {
-        image: String,
-        tags: Array,
-        title: String,
-        description: String,
-        slug: String,
-    },
-};
-</script>

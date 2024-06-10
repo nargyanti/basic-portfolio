@@ -1,15 +1,69 @@
 <script setup>
 import { RouterView } from "vue-router";
-import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
+import { Icon } from "@iconify/vue";
+import IconWrapper from "@/components/IconWrapper.vue";
+import NavLink from "@/components/NavLink.vue";
+import data from "@/assets/data.json";
+
+const { profile } = data;
+
+import { ref } from "vue";
+
+const showMenu = ref(false);
+
+const toggleMenu = () => {
+    showMenu.value = !showMenu.value;
+};
 </script>
 
-<template class="">
-    <Header></Header>
-    <div class="bg-light">
-        <div class="mx-auto max-w-screen-xl px-6 md:px-10">
-            <RouterView />
+<template>
+    <!-- Header::start -->
+    <header class="sticky top-0 z-50 border-b border-b-gray-200 bg-light">
+        <div
+            class="mx-auto flex max-w-screen-xl flex-col items-center md:px-10 px-6 py-5 drop-shadow-sm md:flex-row md:justify-between">
+            <div class="flex w-full items-center justify-between md:w-auto">
+                <!-- Logo::start -->
+                <RouterLink :to="{ name: 'home' }" class="text-lg font-semibold text-gray-700 md:text-xl">nargyanti<span
+                        class="text-primary">.</span></RouterLink>
+                <!-- Logo::end -->
+
+                <!-- Hamburger Menu::start -->
+                <button @click="toggleMenu" class="block md:hidden">
+                    <Icon icon="pajamas:hamburger" width="24" height="24" class="text-primary" />
+                </button>
+                <!-- Hamburger Menu::end -->
+            </div>
+
+            <!-- Navigation::start -->
+            <nav :class="{ hidden: !showMenu }"
+                class="flex flex-col gap-4 pt-6 text-center md:flex md:flex-row md:gap-10 md:pt-0">
+                <NavLink :to="{ name: 'home' }" label="Home" />
+                <NavLink :to="{ name: 'home' }" hash="#about" label="About" />
+                <NavLink :to="{ name: 'home' }" hash="#projects" label="Projects" />
+                <NavLink :to="{ name: 'home' }" hash="#contact" label="Contact" />
+            </nav>
+            <!-- Navigation::end -->
         </div>
-    </div>
-    <Footer></Footer>
+    </header>
+    <!-- Header::end -->
+
+    <!-- View::start -->
+    <RouterView />
+    <!-- View::end -->
+
+    <!-- Footer::start -->
+    <footer class="bg-primary border-t border-t-gray-200">
+        <div class="mx-auto flex max-w-screen-xl flex-col gap-4 px-6 py-5 md:flex-row md:justify-between md:px-10">
+            <p class="text-center text-white">
+                © 2024 Nabilah Argyanti. All rights reserved.
+            </p>
+            <div class="flex justify-center gap-2">
+                <div v-for="(url, platform) in profile.accounts" :key="platform">
+                    <IconWrapper :icon="`simple-icons:${platform}`" :size="'20'" backgroundSize="p-1.5"
+                        :backgroundColor="`bg-white`" />
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer::end -->
 </template>
