@@ -30,10 +30,9 @@ const { profile, education, technical_skills, work_experience, projects } =
                     {{ profile.bio }}
                 </p>
                 <div class="flex items-center justify-center gap-6 lg:justify-start">
-                    <a href="https://example.com" target="_blank" rel="noopener noreferrer"
+                    <RouterLink :to="{ path: '/', hash: '#contact' }"
                         class="rounded-lg bg-primary px-5 py-3 font-semibold text-white hover:bg-primary-dark">
-                        Get in touch
-                    </a>
+                        Get in touch</RouterLink>
                     <a href="" class="font-semibold text-primary hover:underline">Explore my resume
                         <Icon icon="heroicons:arrow-top-right-on-square-16-solid" class="mx-1 mb-1 inline" width="20"
                             height="20" />
@@ -61,7 +60,7 @@ const { profile, education, technical_skills, work_experience, projects } =
                 <!-- Skills:start -->
                 <div class="">
                     <SectionTitle :title="'Technical Skills'" />
-                    <div v-for="(technical_skill, index) in technical_skills" :key="index">
+                    <div v-for="( technical_skill, index ) in  technical_skills " :key="index">
                         <ProfileCard :icon="technical_skill.icon" :title="technical_skill.category"
                             :sub_title="technical_skill.degree" :description="technical_skill.description"
                             :items="technical_skill.skills" :column="2"
@@ -89,7 +88,7 @@ const { profile, education, technical_skills, work_experience, projects } =
                 :sub_title="`These are projects I've completed, providing effective solutions to diverse problems.`" />
             <div class="flex flex-col items-center">
                 <div class="grid gap-x-6 gap-y-6 pt-3 md:grid-cols-2 lg:grid-cols-3">
-                    <ProjectCard v-for="(project, index) in projects" :key="index" :image="project.image"
+                    <ProjectCard v-for="( project, index ) in  projects " :key="index" :image="project.image"
                         :tags="project.tags" :title="project.title" :description="project.description"
                         :slug="project.slug" />
                 </div>
@@ -113,7 +112,7 @@ const { profile, education, technical_skills, work_experience, projects } =
                 reach out to me
             </p>
             <a href="mailto:nargyanti@gmail.com" target="_blank" rel="noopener noreferrer"
-                class="mt-4 rounded-lg bg-white px-5 py-3 font-semibold text-primary hover:bg-secondary">
+                class="mt-4 rounded-lg bg-white px-5 py-3 font-semibold text-primary hover:bg-primary-dark hover:text-white">
                 <Icon icon="material-symbols:mail" class="mr-2 inline" width="30" height="30" />
                 nargyanti@gmail.com
             </a>

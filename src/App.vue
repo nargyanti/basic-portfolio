@@ -57,8 +57,11 @@ const toggleMenu = () => {
             </p>
             <div class="flex justify-center gap-2">
                 <div v-for="(url, platform) in profile.accounts" :key="platform">
-                    <IconWrapper :icon="`simple-icons:${platform}`" :size="'20'" backgroundSize="p-1.5"
-                        :backgroundColor="`bg-white`" />
+                    <a :href="url" target="_blank" rel="noopener noreferrer">
+                        <span class="sr-only">{{ platform }}</span>
+                        <IconWrapper :icon="`simple-icons:${platform}`" :size="'20'" backgroundSize="p-1.5"
+                            :backgroundColor="`bg-white`" />
+                    </a>
                 </div>
             </div>
         </div>
