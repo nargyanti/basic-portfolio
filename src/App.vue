@@ -33,7 +33,7 @@ const toggleMenu = () => {
             </div>
 
             <!-- Navigation::start -->
-            <nav :class="{ hidden: !showMenu }"
+            <nav :class="{ 'hidden': !showMenu }"
                 class="flex flex-col gap-4 pt-6 text-center md:flex md:flex-row md:gap-10 md:pt-0">
                 <NavLink :to="{ path: '/' }" label="Home" />
                 <NavLink :to="{ path: '/', hash: '#about' }" label="About" />
@@ -59,8 +59,8 @@ const toggleMenu = () => {
                 <div v-for="(url, platform) in profile.accounts" :key="platform">
                     <a :href="url" target="_blank" rel="noopener noreferrer">
                         <span class="sr-only">{{ platform }}</span>
-                        <IconWrapper :icon="`simple-icons:${platform}`" :size="'20'" backgroundSize="p-1.5"
-                            :backgroundColor="`bg-white`" />
+                        <IconWrapper :icon="`simple-icons:${platform}`" size="20" backgroundSize="p-1.5"
+                            backgroundColor="bg-white" />
                     </a>
                 </div>
             </div>
