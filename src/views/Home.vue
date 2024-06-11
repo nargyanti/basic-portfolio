@@ -5,6 +5,7 @@ import TimelineList from "@/components/TimelineList.vue";
 import data from "@/assets/data.json";
 import SectionTitle from "@/components/SectionTitle.vue";
 import ProfileCard from "@/components/ProfileCard.vue";
+import ProfilePicture from "@/assets/images/profile-picture.webp";
 
 const { profile, education, technical_skills, work_experience, projects } =
     data;
@@ -15,7 +16,7 @@ const { profile, education, technical_skills, work_experience, projects } =
     <section class="bg-light px-6 py-7 md:px-10 md:py-10 lg:py-14">
         <div class="mx-auto flex max-w-screen-xl flex-col items-center gap-6 lg:flex-row-reverse lg:items-start lg:gap-14">
             <!-- Profile Picture::start -->
-            <img src="@/assets/images/profile-picture.jpg" alt="Profile" class="h-32 rounded-full md:h-56" />
+            <img :src="ProfilePicture" alt="Profile" class="h-32 rounded-full md:h-56" />
             <!-- Profile Picture::end -->
 
             <!-- Bio::start -->
@@ -97,7 +98,7 @@ const { profile, education, technical_skills, work_experience, projects } =
                 <div class="pt-14">
                     <a href="https://example.com" target="_blank" rel="noopener noreferrer"
                         class="rounded-lg border border-primary bg-white px-5 py-3 font-semibold text-primary hover:bg-primary hover:text-white">
-                        Get in touch
+                        Show more
                     </a>
                 </div>
             </div>
