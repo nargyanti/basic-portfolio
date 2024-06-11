@@ -1,6 +1,6 @@
 <script setup>
 import { Icon } from "@iconify/vue";
-import { RouterLink } from "vue-router";
+import NavLink from "@/components/NavLink.vue";
 
 const props = defineProps({
     image: String,
@@ -17,16 +17,16 @@ const props = defineProps({
             class="aspect-video object-cover object-top transition duration-200" />
 
         <div class="flex flex-col justify-between flex-grow px-7 py-5 gap-1">
-            <div class="flex-grow">
+            <div class="flex-grow mb-8">
                 <h3 class="text-xl font-semibold text-gray-700">
                     {{ title }}
                 </h3>
                 <p class="pt-4 text-gray-600">{{ description }}</p>
             </div>
-            <RouterLink :to="{ name: 'home' }" class="self-end text-right font-semibold text-primary hover:underline">
+            <NavLink :to="{ name: 'home' }" class="self-end text-primary">
                 Detail
-                <Icon icon="mdi:arrow-right-thin" width="1.2em" height="1.2em" class="inline" />
-            </RouterLink>
+                <Icon icon="mdi:arrow-right-thin" class="inline mb-1" width="24px" height="24px" />
+            </NavLink>
         </div>
     </div>
     <!-- Project::end-->

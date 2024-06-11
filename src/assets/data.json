@@ -121,8 +121,20 @@
                 "django",
                 "mysql"
             ],
-            "description": "Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa.",
+            "description": "Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa. Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa. ",
             "slug": "project-dummy-4",
+            "demo": "https://example.com/project2-demo"
+        },
+        {
+            "title": "Project 5",
+            "image": "https://glints.com/id/lowongan/wp-content/uploads/2020/07/uimovement.jpg",
+            "tags": [
+                "python",
+                "django",
+                "mysql"
+            ],
+            "description": "Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa.",
+            "slug": "project-dummy-3",
             "demo": "https://example.com/project2-demo"
         }
     ]

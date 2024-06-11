@@ -7,15 +7,11 @@ const props = defineProps({
         type: [String, Object],
         required: true,
     },
-    label: {
-        type: String,
-        required: true,
-    },
 });
 </script>
 
 <template>
     <RouterLink :to="to" class="font-semibold text-gray-600 transition duration-100 hover:text-primary hover:underline">
-        {{ label }}
+        <slot></slot>
     </RouterLink>
 </template>

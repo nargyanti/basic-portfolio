@@ -35,10 +35,10 @@ const toggleMenu = () => {
             <!-- Navigation::start -->
             <nav :class="{ 'hidden': !showMenu }"
                 class="flex flex-col gap-4 pt-6 text-center md:flex md:flex-row md:gap-10 md:pt-0">
-                <NavLink :to="{ path: '/' }" label="Home" />
-                <NavLink :to="{ path: '/', hash: '#about' }" label="About" />
-                <NavLink :to="{ path: '/', hash: '#projects' }" label="Projects" />
-                <NavLink :to="{ path: '/', hash: '#contact' }" label="Contact" />
+                <NavLink :to="{ path: '/' }">Home</NavLink>
+                <NavLink :to="{ path: '/', hash: '#about' }">About</NavLink>
+                <NavLink :to="{ path: '/', hash: '#projects' }">Projects</NavLink>
+                <NavLink :to="{ path: '/', hash: '#contact' }">Contact</NavLink>
             </nav>
             <!-- Navigation::end -->
         </div>
