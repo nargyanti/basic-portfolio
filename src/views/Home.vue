@@ -33,7 +33,9 @@ const { profile, education, technical_skills, work_experience, projects } =
                     <RouterLink :to="{ path: '/', hash: '#contact' }"
                         class="rounded-lg bg-primary px-5 py-3 font-semibold text-white hover:bg-primary-dark">
                         Get in touch</RouterLink>
-                    <a href="" class="font-semibold text-primary hover:underline">Explore my resume
+                    <a href="/CV - Nabilah Argyanti.pdf" target="_blank" rel="noopener noreferrer"
+                        class="font-semibold text-primary hover:underline">Explore my
+                        resume
                         <Icon icon="heroicons:arrow-top-right-on-square-16-solid" class="mx-1 mb-1 inline" width="20"
                             height="20" />
                     </a>
@@ -106,7 +108,7 @@ const { profile, education, technical_skills, work_experience, projects } =
     <!-- CTA::start -->
     <section id="contact" class="bg-primary px-6 py-16 md:px-10">
         <div class="mx-auto flex max-w-screen-xl flex-col items-center justify-center gap-4">
-            <h2 class="text-4xl font-bold text-white">Let's Collaborate!</h2>
+            <h2 class="text-4xl font-bold text-white text-center">Let's Collaborate!</h2>
             <p class="text-center text-lg text-white">
                 Ready to discuss projects, ideas, or just connect? Feel free to
                 reach out to me
