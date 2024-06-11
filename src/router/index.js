@@ -9,10 +9,9 @@ const routes = [
         component: Home,
     },
     {
-        path: "/project/",
-        name: "project_detail",
+        path: "/project/:slug",
+        name: "ProjectDetail",
         component: ProjectDetail,
-        props: true,
     },
 ];
 
@@ -31,19 +30,5 @@ const router = createRouter({
         }
     },
 });
-
-router.beforeEach((to, from, next) => {
-    document.title = to.meta.title || "Nabilah Argyanti's Portfolio";
-    next();
-});
-
-// jsonData.projects.forEach((project) => {
-//     routes.push({
-//         path: `/projects/${project.slug}`,
-//         name: `Project - ${project.title}`,
-//         component: ProjectDetail,
-//         props: { projectData: project },
-//     });
-// });
 
 export default router;
