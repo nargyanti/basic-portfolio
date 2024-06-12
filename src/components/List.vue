@@ -11,8 +11,8 @@ const props = defineProps({
         required: true,
     },
     column: {
-        type: Number,
-        default: 1,
+        type: [Number, String],
+        default: 2,
     },
 });
 
@@ -22,7 +22,7 @@ const gridColumn = computed(() => {
 </script>
 
 <template>
-    <p class="mb-1 text-gray-600">{{ title }}</p>
+    <p v-if="title" class="mb-1 text-gray-600">{{ title }}</p>
     <ul class="grid gap-y-1" :class="gridColumn">
         <li v-for="item in items" :key="item.id" class="flex items-start py-1">
             <Icon icon="f7:bolt-fill" class="mr-2 flex-shrink-0 text-primary mt-1" width="20" height="20" />

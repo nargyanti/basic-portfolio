@@ -20,8 +20,8 @@ const props = defineProps({
         default: () => [],
     },
     column: {
-        type: Number,
-        default: 1,
+        type: [Number, String],
+        default: 2,
     },
 });
 </script>
@@ -36,7 +36,7 @@ const props = defineProps({
             </div>
             <p class="text-gray-600">{{ description }}</p>
             <div class="pt-2" v-if="items?.length > 0">
-                <List :title="'Related subjects:'" :items="items" :column="column" />
+                <List :items="items" :column="column" />
             </div>
         </div>
     </div>

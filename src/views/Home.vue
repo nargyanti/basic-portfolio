@@ -54,7 +54,7 @@ const { profile, education, technical_skills, work_experience, projects } =
             <div class="flex flex-col gap-14">
                 <!-- Education::start -->
                 <div>
-                    <SectionTitle :title="'Education'" />
+                    <SectionTitle class="pb-8">Education</SectionTitle>
                     <ProfileCard :icon="education.icon" :title="education.institution" :sub_title="education.degree"
                         :description="education.thesis" :items="education.subjects" :column="1" />
                 </div>
@@ -62,11 +62,11 @@ const { profile, education, technical_skills, work_experience, projects } =
 
                 <!-- Skills:start -->
                 <div class="">
-                    <SectionTitle :title="'Technical Skills'" />
+                    <SectionTitle class="pb-8">Technical Skills</SectionTitle>
                     <div v-for="( technical_skill, index ) in  technical_skills " :key="index">
                         <ProfileCard :icon="technical_skill.icon" :title="technical_skill.category"
                             :sub_title="technical_skill.degree" :description="technical_skill.description"
-                            :items="technical_skill.skills" :column="2"
+                            :items="technical_skill.skills"
                             :class="`${index === technical_skills.length - 1 ? '' : 'pb-6'}`" />
                     </div>
                 </div>
@@ -76,7 +76,7 @@ const { profile, education, technical_skills, work_experience, projects } =
 
             <!-- Work Experience::start -->
             <div class="">
-                <SectionTitle :title="'Work Experience'" />
+                <SectionTitle class="pb-8">Work Experience</SectionTitle>
                 <TimelineList :activities="work_experience" />
             </div>
             <!-- Work Experience::end -->
@@ -87,9 +87,10 @@ const { profile, education, technical_skills, work_experience, projects } =
     <!-- Projects::start -->
     <section id="projects" class="bg-light px-6 py-14 md:px-10">
         <div class="mx-auto max-w-screen-xl">
-            <SectionTitle :title="'Projects Showcase'"
-                :sub_title="`These are projects I've completed, providing effective solutions to diverse problems.`" />
-            <div class="flex flex-col items-center">
+            <SectionTitle>Project Showcase</SectionTitle>
+            <p class="text-gray-600 pt-3">These are projects I've completed, providing effective solutions to diverse
+                problems.</p>
+            <div class="flex flex-col items-center pt-8">
                 <div class="grid gap-x-6 gap-y-6 pt-3 md:grid-cols-2 lg:grid-cols-3">
                     <ProjectCard v-for="( project, index ) in  projects " :key="index" :image="project.image"
                         :tags="project.tags" :title="project.title" :description="project.description"

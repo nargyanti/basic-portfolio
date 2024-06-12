@@ -21,7 +21,7 @@ const props = defineProps({
             </h3>
             <span class="font-light text-gray-600">{{ activity.period }}</span>
             <div class="pt-2" v-if="activity.jobdesk?.length > 0">
-                <List :items="activity.jobdesk" />
+                <List :items="activity.jobdesk" :column="1" />
             </div>
         </li>
     </ol>
