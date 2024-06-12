@@ -80,10 +80,11 @@
         {
             "title": "Sistem Informasi Politeknik Negeri Malang",
             "image": "https://lh4.googleusercontent.com/DzNngvGh7KkBNbrREmEE-6mEbSlVl7Vkm7JB1CUybacupHyC4xFGyUz2SW51r3pCpUp_R72GPjC9u0ifC8V0kg6lPMpsD7AUQH7VkZ-xht7Z0NZUodICX5VI4zHfca5yltqVPgXLhKc",
-            "Tools": [
+            "tools": [
                 "Laravel",
                 "Bootstrap",
-                "MySQL"
+                "MySQL",
+                "Nginx"
             ],
             "description": "Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa.",
             "slug": "sisfo-polinema",
@@ -92,10 +93,11 @@
         {
             "title": "Project 2",
             "image": "https://themes.getbootstrap.com/wp-content/uploads/2018/06/purpose-website-ui-kit-v2.0.0-cover-1200x900.png",
-            "tags": [
-                "python",
-                "django",
-                "mysql"
+            "tools": [
+                "Python",
+                "Django",
+                "MySQL",
+                "Nginx"
             ],
             "description": "Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa.",
             "slug": "project-dummy",
@@ -104,10 +106,11 @@
         {
             "title": "Project 3",
             "image": "https://glints.com/id/lowongan/wp-content/uploads/2020/07/uimovement.jpg",
-            "tags": [
-                "python",
-                "django",
-                "mysql"
+            "tools": [
+                "Python",
+                "Django",
+                "MySQL",
+                "Nginx"
             ],
             "description": "Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa.",
             "slug": "project-dummy-3",
@@ -116,10 +119,11 @@
         {
             "title": "Project 4",
             "image": "https://www.uxdesigninstitute.com/blog/wp-content/uploads/2022/06/34_Builtin-1.png",
-            "tags": [
-                "python",
-                "django",
-                "mysql"
+            "tools": [
+                "Python",
+                "Django",
+                "MySQL",
+                "Nginx"
             ],
             "description": "Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa. Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa. ",
             "slug": "project-dummy-4",
@@ -128,10 +132,11 @@
         {
             "title": "Project 5",
             "image": "https://glints.com/id/lowongan/wp-content/uploads/2020/07/uimovement.jpg",
-            "tags": [
-                "python",
-                "django",
-                "mysql"
+            "tools": [
+                "Python",
+                "Django",
+                "MySQL",
+                "Nginx"
             ],
             "description": "Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa.",
             "slug": "project-dummy-3",
