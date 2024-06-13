@@ -12,7 +12,7 @@ const { profile, education, technical_skills, work_experience, projects } =
 
 <template>
     <!-- Hero::start -->
-    <section class="bg-light px-6 py-7 md:px-10 md:py-12">
+    <section class="bg-primary-light px-6 py-7 md:px-10 md:py-12">
         <div
             class="mx-auto flex max-w-screen-xl flex-col items-center gap-6 lg:flex-row-reverse lg:items-start lg:gap-14">
             <!-- Profile Picture::start -->
@@ -25,7 +25,7 @@ const { profile, education, technical_skills, work_experience, projects } =
                     Hi there! I'm
                     <span class="block text-primary underline md:inline">{{
                         profile.name
-                        }}</span>
+                    }}</span>
                 </h1>
                 <p class="text-justify text-gray-600 lg:text-start">
                     {{ profile.bio }}
@@ -47,7 +47,7 @@ const { profile, education, technical_skills, work_experience, projects } =
     <!-- Hero::end -->
 
     <!-- About::start -->
-    <section id="about" class="bg-light px-6 py-7 md:px-10 md:py-12">
+    <section id="about" class="bg-primary-light px-6 py-7 md:px-10 md:py-12">
         <div class="mx-auto flex max-w-screen-xl flex-col gap-14 md:flex-row md:justify-between lg:gap-20">
             <!-- Background::start -->
             <div class="flex flex-col gap-14">
@@ -84,7 +84,7 @@ const { profile, education, technical_skills, work_experience, projects } =
     <!-- About::End -->
 
     <!-- Projects::start -->
-    <section id="projects" class="bg-light px-6 pb-14 pt-7 md:px-10 md:px-12 md:pt-14">
+    <section id="projects" class="bg-primary-light px-6 pb-14 pt-7 md:px-10 md:px-12 md:pt-14">
         <div class="mx-auto max-w-screen-xl">
             <SectionTitle>Project Showcase</SectionTitle>
             <p class="pt-3 text-gray-600">
@@ -96,12 +96,6 @@ const { profile, education, technical_skills, work_experience, projects } =
                     <ProjectCard v-for="(project, index) in projects" :key="index" :image="project.image"
                         :tags="project.tags" :title="project.title" :description="project.description"
                         :slug="project.slug" />
-                </div>
-                <div class="pt-14">
-                    <a href="https://example.com" target="_blank" rel="noopener noreferrer"
-                        class="rounded-lg border border-primary bg-white px-5 py-3 font-semibold text-primary hover:bg-primary hover:text-white">
-                        Show more
-                    </a>
                 </div>
             </div>
         </div>

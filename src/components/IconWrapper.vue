@@ -17,7 +17,7 @@ const props = defineProps({
     },
     backgroundColor: {
         type: String,
-        default: "bg-secondary",
+        default: "bg-primary-content",
     },
     backgroundSize: {
         type: String,

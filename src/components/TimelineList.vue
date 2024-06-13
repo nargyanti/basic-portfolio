@@ -11,7 +11,7 @@ defineProps({
 </script>
 
 <template>
-    <ol class="relative ms-4 border-s-2 border-secondary">
+    <ol class="relative ms-4 border-s-2 border-primary-content">
         <li v-for="(activity, index) in activities" :key="index" class="mb-10 ms-10">
             <span class="absolute -start-3 flex w-6 items-center justify-center">
                 <IconWrapper :icon="activity.icon" />
@@ -19,7 +19,7 @@ defineProps({
             <h3 class="text-xl font-semibold text-gray-600">
                 {{ activity.title }}
             </h3>
-            <span class="font-light text-gray-600">{{ activity.period }}</span>
+            <span class="font-primary-light text-gray-600">{{ activity.period }}</span>
             <div class="pt-2" v-if="activity.jobdesk?.length > 0">
                 <ItemList :items="activity.jobdesk" :column="1" />
             </div>

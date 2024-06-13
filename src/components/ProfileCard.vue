@@ -9,9 +9,6 @@ defineProps({
     title: {
         type: String,
     },
-    sub_title: {
-        type: String,
-    },
     description: {
         type: String,
     },
@@ -32,7 +29,6 @@ defineProps({
         <div class="flex flex-col gap-2">
             <div class="flex flex-col gap-0">
                 <h3 class="text-xl font-semibold text-gray-700">{{ title }}</h3>
-                <p class="font-light text-gray-600">{{ sub_title }}</p>
             </div>
             <p class="text-gray-600">{{ description }}</p>
             <div class="pt-2" v-if="items?.length > 0">

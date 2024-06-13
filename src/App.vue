@@ -1,8 +1,7 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
 import { ref } from "vue";
+import { RouterLink, RouterView } from "vue-router";
 import { Icon } from "@iconify/vue";
-import IconWrapper from "@/components/IconWrapper.vue";
 import NavLink from "@/components/NavLink.vue";
 import data from "@/assets/data.json";
 
@@ -17,7 +16,7 @@ const toggleMenu = () => {
 
 <template>
     <!-- Header::start -->
-    <header class="sticky top-0 z-50 border-b border-b-gray-200 bg-light px-6 py-4 md:px-10">
+    <header class="sticky top-0 z-50 border-b border-b-gray-200 bg-primary-light px-6 py-4 md:px-10">
         <div class="mx-auto flex max-w-screen-xl flex-col items-center drop-shadow-sm md:flex-row md:justify-between">
             <div class="flex w-full items-center justify-between md:w-auto">
                 <!-- Logo::start -->
@@ -51,17 +50,17 @@ const toggleMenu = () => {
     <!-- View::end -->
 
     <!-- Footer::start -->
-    <footer class="border-t border-t-gray-200 bg-primary px-6 py-3 md:px-10">
+    <footer class="border-t border-t-gray-200 bg-primary px-6 py-4 md:px-10">
         <div class="mx-auto flex max-w-screen-xl flex-col items-center gap-4 md:flex-row md:justify-between">
             <p class="text-center text-white">
                 © 2024 Nabilah Argyanti. All rights reserved.
             </p>
-            <div class="flex justify-center gap-2">
+            <div class="flex justify-center gap-1.5">
                 <div v-for="(url, platform) in profile.accounts" :key="platform">
                     <a :href="url" target="_blank" rel="noopener noreferrer">
                         <span class="sr-only">{{ platform }}</span>
-                        <Icon :icon="`mdi:${platform}`" class="text-white hover:text-secondary" width="24"
-                            height="24" />
+                        <Icon :icon="`mdi:${platform}`" class="text-white hover:text-primary-dark" width="26"
+                            height="26" />
                     </a>
                 </div>
             </div>

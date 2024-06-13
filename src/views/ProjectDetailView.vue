@@ -22,7 +22,7 @@ function getProjectBySlug(slug) {
 
 <template>
     <div v-if="project" class="pb-14">
-        <section class="bg-light px-6 pb-7 pt-7 md:px-10 md:pb-14">
+        <section class="bg-primary-light px-6 pb-7 pt-7 md:px-10 md:pb-14">
             <div class="mb-6">
                 <NavLink :to="{ path: '/', hash: '#projects' }" class="text-primary">
                     <Icon icon="mdi:arrow-left-thin" class="mb-1 inline" width="24px" height="24px" />
