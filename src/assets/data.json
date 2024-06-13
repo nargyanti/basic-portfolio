@@ -2,8 +2,9 @@
     "profile": {
         "name": "Nabilah Argyanti",
         "bio": "As a graduate of Informatics Engineering, I have a keen interest in web development and data science. With one year of industry experience, I am skilled in developing web applications. Currently, I am exploring innovative solutions using web technologies and studying the application of data science to solve problems. My skills include proficiency in Laravel and exploration of technologies such as Vue.js, Inertia, Tailwind, and data processing with Python.",
-        "resume_url": "#",
-        "email": "mailto:nargyanti@gmail.com",
+        "resume_url": "/CV - Nabilah Argyanti.pdf",
+        "email": "nargyanti@gmail.com",
+        "image": "/images/profile-picture.webp",
         "accounts": {
             "github": "https://github.com/nargyanti",
             "linkedin": "https://www.linkedin.com/in/nargyanti/",
@@ -109,30 +110,64 @@
             ]
         },
         {
-            "title": "Project 2",
-            "image": "https://themes.getbootstrap.com/wp-content/uploads/2018/06/purpose-website-ui-kit-v2.0.0-cover-1200x900.png",
+            "title": "Sistem Informasi Politeknik Negeri Malang",
+            "image": "https://lh4.googleusercontent.com/DzNngvGh7KkBNbrREmEE-6mEbSlVl7Vkm7JB1CUybacupHyC4xFGyUz2SW51r3pCpUp_R72GPjC9u0ifC8V0kg6lPMpsD7AUQH7VkZ-xht7Z0NZUodICX5VI4zHfca5yltqVPgXLhKc",
             "tools": [
-                "Python",
-                "Django",
+                "Laravel",
+                "Bootstrap",
                 "MySQL",
                 "Nginx"
             ],
             "description": "Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa.",
-            "slug": "project-dummy",
-            "demo": "https://example.com/project2-demo"
+            "slug": "sisfo-polinema",
+            "source_code": "https://example.com/project1-demo",
+            "demo": "https://example.com/project1-demo",
+            "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur architecto neque eum exercitationem perspiciatis omnis, laudantium corporis adipisci, sunt earum animi ab dolor. Quaerat praesentium explicabo eveniet iste suscipit repudiandae.",
+            "features": [
+                "Feature 1: Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "Feature 2: Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "Feature 3: Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            ],
+            "references": [
+                {
+                    "title": "Reference 1",
+                    "url": "https://example.com/reference1"
+                },
+                {
+                    "title": "Reference 2",
+                    "url": "https://example.com/reference2"
+                }
+            ]
         },
         {
-            "title": "Project 3",
-            "image": "https://glints.com/id/lowongan/wp-content/uploads/2020/07/uimovement.jpg",
+            "title": "Sistem Informasi Politeknik Negeri Malang",
+            "image": "https://lh4.googleusercontent.com/DzNngvGh7KkBNbrREmEE-6mEbSlVl7Vkm7JB1CUybacupHyC4xFGyUz2SW51r3pCpUp_R72GPjC9u0ifC8V0kg6lPMpsD7AUQH7VkZ-xht7Z0NZUodICX5VI4zHfca5yltqVPgXLhKc",
             "tools": [
-                "Python",
-                "Django",
+                "Laravel",
+                "Bootstrap",
                 "MySQL",
                 "Nginx"
             ],
             "description": "Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa.",
-            "slug": "project-dummy-3",
-            "demo": "https://example.com/project2-demo"
+            "slug": "sisfo-polinema",
+            "source_code": "https://example.com/project1-demo",
+            "demo": "https://example.com/project1-demo",
+            "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur architecto neque eum exercitationem perspiciatis omnis, laudantium corporis adipisci, sunt earum animi ab dolor. Quaerat praesentium explicabo eveniet iste suscipit repudiandae.",
+            "features": [
+                "Feature 1: Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "Feature 2: Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                "Feature 3: Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            ],
+            "references": [
+                {
+                    "title": "Reference 1",
+                    "url": "https://example.com/reference1"
+                },
+                {
+                    "title": "Reference 2",
+                    "url": "https://example.com/reference2"
+                }
+            ]
         },
         {
             "title": "Project 4",
@@ -145,7 +180,8 @@
             ],
             "description": "Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa. Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa. ",
             "slug": "project-dummy-4",
-            "demo": "https://example.com/project2-demo"
+            "demo": "https://example.com/project2-demo",
+            "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur architecto neque eum exercitationem perspiciatis omnis, laudantium corporis adipisci, sunt earum animi ab dolor. Quaerat praesentium explicabo eveniet iste suscipit repudiandae."
         },
         {
             "title": "Project 5",
@@ -158,7 +194,8 @@
             ],
             "description": "Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa.",
             "slug": "project-dummy-3",
-            "demo": "https://example.com/project2-demo"
+            "demo": "https://example.com/project2-demo",
+            "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur architecto neque eum exercitationem perspiciatis omnis, laudantium corporis adipisci, sunt earum animi ab dolor. Quaerat praesentium explicabo eveniet iste suscipit repudiandae."
         }
     ]
 }
