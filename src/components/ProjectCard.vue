@@ -12,12 +12,12 @@ defineProps({
 
 <template>
     <!-- Project::start -->
-    <div class="flex flex-col overflow-hidden rounded-lg border border-gray-200 h-full">
+    <div class="flex h-full flex-col overflow-hidden rounded-lg border border-gray-200">
         <img :src="image" loading="lazy" :alt="title"
             class="aspect-video object-cover object-top transition duration-200" />
 
-        <div class="flex flex-col justify-between flex-grow px-7 py-5 gap-1">
-            <div class="flex-grow mb-8">
+        <div class="flex flex-grow flex-col justify-between gap-1 px-7 py-5">
+            <div class="mb-8 flex-grow">
                 <h3 class="text-xl font-semibold text-gray-700">
                     {{ title }}
                 </h3>
@@ -25,7 +25,7 @@ defineProps({
             </div>
             <NavLink :to="{ path: `/project/${slug}` }" class="self-end text-primary">
                 Detail
-                <Icon icon="mdi:arrow-right-thin" class="inline mb-1" width="24px" height="24px" />
+                <Icon icon="mdi:arrow-right-thin" class="mb-1 inline" width="24px" height="24px" />
             </NavLink>
         </div>
     </div>

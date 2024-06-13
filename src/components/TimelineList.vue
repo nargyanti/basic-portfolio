@@ -11,7 +11,7 @@ defineProps({
 </script>
 
 <template>
-    <ol class="relative border-s-2 border-secondary ms-4">
+    <ol class="relative ms-4 border-s-2 border-secondary">
         <li v-for="(activity, index) in activities" :key="index" class="mb-10 ms-10">
             <span class="absolute -start-3 flex w-6 items-center justify-center">
                 <IconWrapper :icon="activity.icon" />

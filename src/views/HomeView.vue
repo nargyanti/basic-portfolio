@@ -12,8 +12,9 @@ const { profile, education, technical_skills, work_experience, projects } =
 
 <template>
     <!-- Hero::start -->
-    <section class="bg-light px-6 py-7 md:px-10 md:py-10 lg:py-14">
-        <div class="mx-auto flex max-w-screen-xl flex-col items-center gap-6 lg:flex-row-reverse lg:items-start lg:gap-14">
+    <section class="bg-light px-6 py-7 md:px-10 md:py-12">
+        <div
+            class="mx-auto flex max-w-screen-xl flex-col items-center gap-6 lg:flex-row-reverse lg:items-start lg:gap-14">
             <!-- Profile Picture::start -->
             <img :src="profile.image" alt="Profile" class="h-32 rounded-full md:h-56" />
             <!-- Profile Picture::end -->
@@ -22,7 +23,9 @@ const { profile, education, technical_skills, work_experience, projects } =
             <div class="flex flex-col gap-6">
                 <h1 class="text-center text-3xl font-bold text-gray-700 md:text-5xl lg:text-start">
                     Hi there! I'm
-                    <span class="block text-primary underline md:inline">{{ profile.name }}</span>
+                    <span class="block text-primary underline md:inline">{{
+                        profile.name
+                        }}</span>
                 </h1>
                 <p class="text-justify text-gray-600 lg:text-start">
                     {{ profile.bio }}
@@ -44,7 +47,7 @@ const { profile, education, technical_skills, work_experience, projects } =
     <!-- Hero::end -->
 
     <!-- About::start -->
-    <section id="about" class="bg-light px-6 py-14 md:px-10">
+    <section id="about" class="bg-light px-6 py-7 md:px-10 md:py-12">
         <div class="mx-auto flex max-w-screen-xl flex-col gap-14 md:flex-row md:justify-between lg:gap-20">
             <!-- Background::start -->
             <div class="flex flex-col gap-14">
@@ -59,7 +62,7 @@ const { profile, education, technical_skills, work_experience, projects } =
                 <!-- Skills:start -->
                 <div class="">
                     <SectionTitle class="pb-8">Technical Skills</SectionTitle>
-                    <div v-for="(    technical_skill, index    ) in     technical_skills    " :key="index">
+                    <div v-for="(technical_skill, index) in technical_skills" :key="index">
                         <ProfileCard :icon="technical_skill.icon" :title="technical_skill.category"
                             :sub_title="technical_skill.degree" :description="technical_skill.description"
                             :items="technical_skill.skills"
@@ -81,14 +84,16 @@ const { profile, education, technical_skills, work_experience, projects } =
     <!-- About::End -->
 
     <!-- Projects::start -->
-    <section id="projects" class="bg-light px-6 py-14 md:px-10">
+    <section id="projects" class="bg-light px-6 pb-14 pt-7 md:px-10 md:px-12 md:pt-14">
         <div class="mx-auto max-w-screen-xl">
             <SectionTitle>Project Showcase</SectionTitle>
-            <p class="text-gray-600 pt-3">These are projects I've completed, providing effective solutions to diverse
-                problems.</p>
+            <p class="pt-3 text-gray-600">
+                These are projects I've completed, providing effective solutions
+                to diverse problems.
+            </p>
             <div class="flex flex-col items-center pt-8">
                 <div class="grid gap-x-6 gap-y-6 pt-3 md:grid-cols-2 lg:grid-cols-3">
-                    <ProjectCard v-for="(    project, index    ) in     projects    " :key="index" :image="project.image"
+                    <ProjectCard v-for="(project, index) in projects" :key="index" :image="project.image"
                         :tags="project.tags" :title="project.title" :description="project.description"
                         :slug="project.slug" />
                 </div>
@@ -106,7 +111,9 @@ const { profile, education, technical_skills, work_experience, projects } =
     <!-- CTA::start -->
     <section id="contact" class="bg-primary px-6 py-16 md:px-10">
         <div class="mx-auto flex max-w-screen-xl flex-col items-center justify-center gap-4">
-            <h2 class="text-4xl font-bold text-white text-center">Let's Collaborate!</h2>
+            <h2 class="text-center text-4xl font-bold text-white">
+                Let's Collaborate!
+            </h2>
             <p class="text-center text-lg text-white">
                 Ready to discuss projects, ideas, or just connect? Feel free to
                 reach out to me
