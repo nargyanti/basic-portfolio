@@ -27,13 +27,14 @@ const toggleMenu = () => {
 
                 <!-- Hamburger Menu::start -->
                 <button @click="toggleMenu" class="block md:hidden">
+                    <span class="sr-only">Toggle Menu</span>
                     <Icon icon="pajamas:hamburger" width="24" height="24" class="text-primary" />
                 </button>
                 <!-- Hamburger Menu::end -->
             </div>
 
             <!-- Navigation::start -->
-            <nav :class="{ 'hidden': !showMenu }"
+            <nav :class="{ hidden: !showMenu }"
                 class="flex flex-col gap-4 pt-6 text-center md:flex md:flex-row md:gap-10 md:pt-0">
                 <NavLink :to="{ path: '/' }">Home</NavLink>
                 <NavLink :to="{ path: '/', hash: '#about' }">About</NavLink>
@@ -51,7 +52,7 @@ const toggleMenu = () => {
 
     <!-- Footer::start -->
     <footer class="border-t border-t-gray-200 bg-primary px-6 py-3 md:px-10">
-        <div class="mx-auto flex max-w-screen-xl flex-col gap-4 md:flex-row md:justify-between items-center">
+        <div class="mx-auto flex max-w-screen-xl flex-col items-center gap-4 md:flex-row md:justify-between">
             <p class="text-center text-white">
                 © 2024 Nabilah Argyanti. All rights reserved.
             </p>
@@ -59,8 +60,8 @@ const toggleMenu = () => {
                 <div v-for="(url, platform) in profile.accounts" :key="platform">
                     <a :href="url" target="_blank" rel="noopener noreferrer">
                         <span class="sr-only">{{ platform }}</span>
-                        <IconWrapper :icon="`simple-icons:${platform}`" size="20" backgroundSize="p-1.5"
-                            backgroundColor="bg-white" />
+                        <Icon :icon="`mdi:${platform}`" class="text-white hover:text-secondary" width="24"
+                            height="24" />
                     </a>
                 </div>
             </div>
