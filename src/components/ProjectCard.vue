@@ -2,7 +2,7 @@
 import { Icon } from "@iconify/vue";
 import NavLink from "@/components/NavLink.vue";
 
-const props = defineProps({
+defineProps({
     image: String,
     title: String,
     description: String,

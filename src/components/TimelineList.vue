@@ -1,8 +1,8 @@
 <script setup>
 import IconWrapper from "@/components/IconWrapper.vue";
-import List from "@/components/List.vue";
+import ItemList from "@/components/ItemList.vue";
 
-const props = defineProps({
+defineProps({
     activities: {
         type: Array,
         default: () => [],
@@ -21,7 +21,7 @@ const props = defineProps({
             </h3>
             <span class="font-light text-gray-600">{{ activity.period }}</span>
             <div class="pt-2" v-if="activity.jobdesk?.length > 0">
-                <List :items="activity.jobdesk" :column="1" />
+                <ItemList :items="activity.jobdesk" :column="1" />
             </div>
         </li>
     </ol>

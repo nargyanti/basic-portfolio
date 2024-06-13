@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
-import List from '@/components/List.vue';
+import ItemList from '@/components/ItemList.vue';
 import data from '@/assets/data.json';
 import { Icon } from '@iconify/vue';
 import NavLink from '@/components/NavLink.vue';
@@ -35,7 +35,7 @@ function getProjectBySlug(slug) {
                 <div class="flex flex-col gap-5">
                     <h1 class="text-gray-700 text-3xl font-semibold">{{ project.title }}</h1>
                     <p>{{ project.description }}</p>
-                    <List :items="project.tools" :column="2" />
+                    <ItemList :items="project.tools" :column="2" />
                     <div class="flex items-center gap-6 mt-6">
                         <RouterLink :to="{ path: '/', hash: '#contact' }"
                             class="rounded-lg bg-primary px-5 py-3 font-semibold text-white hover:bg-primary-dark">
@@ -49,26 +49,22 @@ function getProjectBySlug(slug) {
                 </div>
             </div>
         </section>
-        <section class="bg-light px-6 py-7 md:px-10">
+        <section class="bg-white px-6 py-7 md:px-10">
             <div class="mx-auto max-w-screen-xl">
-                <SectionTitle>Latar Belakang</SectionTitle>
-                <p class="text-gray-600 pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatem
-                    nesciunt doloremque quae, omnis architecto esse illo eveniet repellendus sequi numquam autem ducimus
-                    expedita maiores cumque sit. Aliquid, dignissimos totam! Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Deserunt dolores
-                    iure a iste sed facere repudiandae modi nesciunt est voluptate. Doloribus quaerat ullam doloremque
-                    veritatis facilis perspiciatis soluta dolore autem?</p>
+                <SectionTitle>Overview</SectionTitle>
+                <p class="text-gray-600 pt-4">{{ project.overview }}</p>
             </div>
         </section>
-        <section class="bg-light px-6 py-7 md:px-10">
+        <section class="bg-white px-6 py-7 md:px-10">
             <div class="mx-auto max-w-screen-xl">
-                <SectionTitle>Latar Belakang</SectionTitle>
-                <p class="text-gray-600 pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatem
-                    nesciunt doloremque quae, omnis architecto esse illo eveniet repellendus sequi numquam autem ducimus
-                    expedita maiores cumque sit. Aliquid, dignissimos totam! Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Deserunt dolores
-                    iure a iste sed facere repudiandae modi nesciunt est voluptate. Doloribus quaerat ullam doloremque
-                    veritatis facilis perspiciatis soluta dolore autem?</p>
+                <SectionTitle>Features</SectionTitle>
+                <ItemList :items="project.features" :column="1" />
+            </div>
+        </section>
+        <section class="bg-white px-6 py-7 md:px-10">
+            <div class="mx-auto max-w-screen-xl">
+                <SectionTitle>Overview</SectionTitle>
+                <p class="text-gray-600 pt-4">{{ project.challenges }}</p>
             </div>
         </section>
     </div>

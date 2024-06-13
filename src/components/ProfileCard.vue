@@ -1,8 +1,8 @@
 <script setup>
-import List from "@/components/List.vue";
+import ItemList from "@/components/ItemList.vue";
 import IconWrapper from "@/components/IconWrapper.vue";
 
-const props = defineProps({
+defineProps({
     icon: {
         type: String,
     },
@@ -36,7 +36,7 @@ const props = defineProps({
             </div>
             <p class="text-gray-600">{{ description }}</p>
             <div class="pt-2" v-if="items?.length > 0">
-                <List :items="items" :column="column" />
+                <ItemList :items="items" :column="column" />
             </div>
         </div>
     </div>
