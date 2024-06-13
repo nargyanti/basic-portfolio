@@ -13,18 +13,18 @@ const project = ref(null);
 onMounted(() => {
     const { slug } = router.currentRoute.value.params;
     project.value = getProjectBySlug(slug);
-    console.log(project.value);
 });
 
 function getProjectBySlug(slug) {
     return data.projects.find(project => project.slug === slug) || null;
 }
 </script>
+
 <template>
     <div v-if="project" class="pb-20">
         <section class="bg-light px-6 pt-7 pb-14 md:px-10">
             <div class="mb-6">
-                <NavLink :to="{ path: '/', hash: '#projects', query: { noSmooth: true } }" class="text-primary">
+                <NavLink :to="{ path: '/', hash: '#projects' }" class="text-primary">
                     <Icon icon="mdi:arrow-left-thin" class="inline mb-1" width="24px" height="24px" />
                     Back to projects
                 </NavLink>
@@ -76,3 +76,9 @@ function getProjectBySlug(slug) {
         <p>Loading...</p>
     </div>
 </template>
+
+<style scoped>
+.content h1 {
+    font-size: 50px;
+}
+</style>

@@ -23,7 +23,7 @@ const props = defineProps({
                 </h3>
                 <p class="pt-4 text-gray-600">{{ description }}</p>
             </div>
-            <NavLink :to="{ path: `/project/${slug}`, query: { noSmooth: true } }" class="self-end text-primary">
+            <NavLink :to="{ path: `/project/${slug}` }" class="self-end text-primary">
                 Detail
                 <Icon icon="mdi:arrow-right-thin" class="inline mb-1" width="24px" height="24px" />
             </NavLink>

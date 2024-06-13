@@ -17,7 +17,7 @@ const toggleMenu = () => {
 
 <template>
     <!-- Header::start -->
-    <header class="sticky top-0 z-50 border-b border-b-gray-200 bg-light px-6 py-5 md:px-10">
+    <header class="sticky top-0 z-50 border-b border-b-gray-200 bg-light px-6 py-4 md:px-10">
         <div class="mx-auto flex max-w-screen-xl flex-col items-center drop-shadow-sm md:flex-row md:justify-between">
             <div class="flex w-full items-center justify-between md:w-auto">
                 <!-- Logo::start -->
@@ -50,8 +50,8 @@ const toggleMenu = () => {
     <!-- View::end -->
 
     <!-- Footer::start -->
-    <footer class="border-t border-t-gray-200 bg-primary px-6 py-5 md:px-10">
-        <div class="mx-auto flex max-w-screen-xl flex-col gap-4 md:flex-row md:justify-between">
+    <footer class="border-t border-t-gray-200 bg-primary px-6 py-3 md:px-10">
+        <div class="mx-auto flex max-w-screen-xl flex-col gap-4 md:flex-row md:justify-between items-center">
             <p class="text-center text-white">
                 © 2024 Nabilah Argyanti. All rights reserved.
             </p>
