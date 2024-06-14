@@ -12,16 +12,19 @@ import PrimaryButton from "@/components/PrimaryButton.vue";
 import ExternalLink from "@/components/ExternalLink.vue";
 
 const router = useRouter();
-
 const project = ref(null);
 
-onMounted(() => {
+onMounted(async () => {
     const { slug } = router.currentRoute.value.params;
-    project.value = getProjectBySlug(slug);
+    project.value = await getProjectBySlug(slug);
 });
 
-function getProjectBySlug(slug) {
-    return data.projects.find((project) => project.slug === slug) || null;
+async function getProjectBySlug(slug) {
+    const foundProject = data.projects.find((project) => project.slug === slug) || null;
+    if (!foundProject) {
+        console.error(`Project with slug ${slug} not found.`);
+    }
+    return foundProject;
 }
 </script>
 
@@ -51,10 +54,11 @@ function getProjectBySlug(slug) {
                     </p>
                     <ItemList :items="project.tools" :column="2" />
                     <div class="mt-6 flex items-center gap-6">
-                        <RouterLink :to="{ path: '/', hash: '#contact' }">
+                        <ExternalLink v-if="project.source_code_url" :url="project.source_code_url">
                             <PrimaryButton>Source code</PrimaryButton>
-                        </RouterLink>
-                        <ExternalLink :url="`https://google.com`" class="font-semibold text-primary hover:underline">
+                        </ExternalLink>
+                        <ExternalLink v-if="project.demo_url" :url="project.demo_url"
+                            class="font-semibold text-primary hover:underline">
                             <IconText :icon="'heroicons:arrow-top-right-on-square-16-solid'" :iconPosition="'right'"
                                 :text="'View demo'" />
                         </ExternalLink>
@@ -98,9 +102,3 @@ function getProjectBySlug(slug) {
         </section>
     </div>
 </template>
-
-<style scoped>
-.content h1 {
-    font-size: 50px;
-}
-</style>

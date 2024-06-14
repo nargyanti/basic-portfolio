@@ -89,8 +89,8 @@
             ],
             "description": "Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa.",
             "slug": "sisfo-polinema",
-            "source_code": "https://example.com/project1-demo",
-            "demo": "https://example.com/project1-demo",
+            "source_code_url": "https://example.com/project1-demo",
+            "demo_url": "https://example.com/project1-demo",
             "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur architecto neque eum exercitationem perspiciatis omnis, laudantium corporis adipisci, sunt earum animi ab dolor. Quaerat praesentium explicabo eveniet iste suscipit repudiandae.",
             "features": [
                 "Feature 1: Lorem ipsum dolor sit amet consectetur adipisicing elit.",
