@@ -46,7 +46,7 @@ const { profile, education, technical_skills, work_experience, projects } = data
     <section id="about" class="bg-primary-light px-6 py-7 md:px-10 md:py-12">
         <div class="mx-auto flex max-w-screen-xl flex-col gap-14 md:flex-row md:justify-between lg:gap-20">
             <!-- Background -->
-            <div class="flex flex-col gap-14">
+            <div class="flex flex-col gap-14 w-full md:max-w-1/2">
                 <!-- Education -->
                 <div id="education">
                     <SectionTitle class="pb-8">Education</SectionTitle>
@@ -67,7 +67,7 @@ const { profile, education, technical_skills, work_experience, projects } = data
             </div>
 
             <!-- Work Experience -->
-            <div id="work-experience">
+            <div id="work-experience" class="w-full md:max-w-1/2">
                 <SectionTitle class="pb-8">Work Experience</SectionTitle>
                 <TimelineList :activities="work_experience" />
             </div>
