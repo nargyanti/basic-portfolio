@@ -1,5 +1,6 @@
 <script setup>
 import { Icon } from "@iconify/vue";
+import IconText from "@/components/IconText.vue";
 import NavLink from "@/components/NavLink.vue";
 
 defineProps({
@@ -24,8 +25,7 @@ defineProps({
                 <p class="pt-4 text-gray-600">{{ description }}</p>
             </div>
             <NavLink :to="{ path: `/project/${slug}` }" class="self-end text-primary">
-                Detail
-                <Icon icon="mdi:arrow-right-thin" class="mb-1 inline" width="24px" height="24px" />
+                <IconText :icon="'mdi:arrow-right-thin'" :text="'Detail'" :iconPosition="'right'" />
             </NavLink>
         </div>
     </div>

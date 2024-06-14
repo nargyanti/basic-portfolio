@@ -2,8 +2,11 @@
 import { ref } from "vue";
 import { RouterLink, RouterView } from "vue-router";
 import { Icon } from "@iconify/vue";
+
 import NavLink from "@/components/NavLink.vue";
+
 import data from "@/assets/data.json";
+import ExternalLink from "./components/ExternalLink.vue";
 
 const { profile } = data;
 
@@ -15,24 +18,22 @@ const toggleMenu = () => {
 </script>
 
 <template>
-    <!-- Header::start -->
-    <header class="sticky top-0 z-50 border-b border-b-gray-200 bg-primary-light px-6 py-4 md:px-10">
+    <!-- Header -->
+    <header class="bg-primary-light sticky top-0 z-50 border-b border-b-gray-200 px-6 py-4 md:px-10">
         <div class="mx-auto flex max-w-screen-xl flex-col items-center drop-shadow-sm md:flex-row md:justify-between">
             <div class="flex w-full items-center justify-between md:w-auto">
-                <!-- Logo::start -->
+                <!-- Logo -->
                 <RouterLink :to="{ path: '/' }" class="text-lg font-semibold text-gray-700 md:text-xl">nargyanti<span
                         class="text-primary">.</span></RouterLink>
-                <!-- Logo::end -->
 
-                <!-- Hamburger Menu::start -->
+                <!-- Hamburger Menu -->
                 <button @click="toggleMenu" class="block md:hidden">
                     <span class="sr-only">Toggle Menu</span>
                     <Icon icon="pajamas:hamburger" width="24" height="24" class="text-primary" />
                 </button>
-                <!-- Hamburger Menu::end -->
             </div>
 
-            <!-- Navigation::start -->
+            <!-- Navigation -->
             <nav :class="{ hidden: !showMenu }"
                 class="flex flex-col gap-4 pt-6 text-center md:flex md:flex-row md:gap-10 md:pt-0">
                 <NavLink :to="{ path: '/' }">Home</NavLink>
@@ -40,31 +41,30 @@ const toggleMenu = () => {
                 <NavLink :to="{ path: '/', hash: '#projects' }">Projects</NavLink>
                 <NavLink :to="{ path: '/', hash: '#contact' }">Contact</NavLink>
             </nav>
-            <!-- Navigation::end -->
         </div>
     </header>
-    <!-- Header::end -->
 
-    <!-- View::start -->
+    <!-- View -->
     <RouterView />
-    <!-- View::end -->
 
-    <!-- Footer::start -->
+    <!-- Footer -->
     <footer class="border-t border-t-gray-200 bg-primary px-6 py-4 md:px-10">
         <div class="mx-auto flex max-w-screen-xl flex-col items-center gap-4 md:flex-row md:justify-between">
+            <!-- Credit -->
             <p class="text-center text-white">
                 © 2024 Nabilah Argyanti. All rights reserved.
             </p>
+
+            <!-- Social Media -->
             <div class="flex justify-center gap-1.5">
                 <div v-for="(url, platform) in profile.accounts" :key="platform">
-                    <a :href="url" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink :url="url">
                         <span class="sr-only">{{ platform }}</span>
                         <Icon :icon="`mdi:${platform}`" class="text-white hover:text-primary-dark" width="26"
                             height="26" />
-                    </a>
+                    </ExternalLink>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- Footer::end -->
 </template>
