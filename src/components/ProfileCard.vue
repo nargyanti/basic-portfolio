@@ -1,6 +1,6 @@
 <script setup>
-import ItemList from "@/components/ItemList.vue";
 import IconWrapper from "@/components/IconWrapper.vue";
+import ItemList from "@/components/ItemList.vue";
 
 defineProps({
     icon: {

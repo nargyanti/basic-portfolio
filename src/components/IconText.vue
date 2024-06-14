@@ -1,29 +1,29 @@
 <script setup>
-import { computed } from 'vue';
-import { Icon } from '@iconify/vue';
+import { computed } from "vue";
+import { Icon } from "@iconify/vue";
 
 const props = defineProps({
     icon: {
         type: String,
-        required: true
+        required: true,
     },
     text: {
         type: String,
-        required: true
+        required: true,
     },
     iconPosition: {
         type: String,
-        default: 'left',
-        validator: value => ['left', 'right'].includes(value)
+        default: "left",
+        validator: (value) => ["left", "right"].includes(value),
     },
     iconSize: {
         type: [String, Number],
-        default: 20
+        default: 20,
     },
     additionalClasses: {
         type: String,
-        default: ''
-    }
+        default: "",
+    },
 });
 
 const baseClasses = computed(() => {
@@ -33,10 +33,10 @@ const baseClasses = computed(() => {
 
 <template>
     <div :class="baseClasses">
-        <Icon v-if="icon && iconPosition === 'left'" :icon="icon" class="mr-1.5 inline" :width="iconSize"
+        <Icon v-if="icon && iconPosition === 'left'" :icon="icon" class="mr-1.5 mt-0.5 flex-shrink-0" :width="iconSize"
             :height="iconSize" />
-        <span>{{ text }}</span>
-        <Icon v-if="icon && iconPosition === 'right'" :icon="icon" class="ml-1.5 inline" :width="iconSize"
+        <span class="flex-grow">{{ text }}</span>
+        <Icon v-if="icon && iconPosition === 'right'" :icon="icon" class="ml-1.5 mt-0.5 flex-shrink-0" :width="iconSize"
             :height="iconSize" />
     </div>
 </template>

@@ -11,7 +11,6 @@ defineProps({
 </script>
 
 <template>
-    <!-- Project::start -->
     <div class="flex h-full flex-col overflow-hidden rounded-lg border border-gray-200">
         <img :src="image" loading="lazy" :alt="title"
             class="aspect-video object-cover object-top transition duration-200" />
@@ -24,9 +23,8 @@ defineProps({
                 <p class="pt-4 text-gray-600">{{ description }}</p>
             </div>
             <NavLink :to="{ path: `/project/${slug}` }" class="self-end text-primary">
-                <IconText :icon="'mdi:arrow-right-thin'" :text="'Detail'" :iconPosition="'right'" />
+                <IconText :icon="'mdi:arrow-right-thin'" :text="'Detail'" :iconPosition="'right'" :iconSize="22" />
             </NavLink>
         </div>
     </div>
-    <!-- Project::end-->
 </template>

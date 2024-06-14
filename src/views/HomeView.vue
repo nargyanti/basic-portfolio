@@ -102,7 +102,7 @@ const { profile, education, technical_skills, work_experience, projects } = data
             </p>
             <ExternalLink :url="`mailto:${profile.email}`">
                 <SecondaryButton>
-                    <IconText :icon="'material-symbols:mail'" :text="profile.email" :iconSize="30" />
+                    <IconText :icon="'material-symbols:mail'" :text="profile.email" :iconSize="28" />
                 </SecondaryButton>
             </ExternalLink>
         </div>

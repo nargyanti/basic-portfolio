@@ -1,7 +1,6 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { useRouter } from "vue-router";
-import { Icon } from "@iconify/vue";
 
 import data from "@/assets/data.json";
 
