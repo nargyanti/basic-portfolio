@@ -33,7 +33,7 @@ const baseClasses = computed(() => {
 
 <template>
     <div :class="baseClasses">
-        <Icon v-if="icon && iconPosition === 'left'" :icon="icon" class="mr-2.5 inline" :width="iconSize"
+        <Icon v-if="icon && iconPosition === 'left'" :icon="icon" class="mr-1.5 inline" :width="iconSize"
             :height="iconSize" />
         <span>{{ text }}</span>
         <Icon v-if="icon && iconPosition === 'right'" :icon="icon" class="ml-1.5 inline" :width="iconSize"

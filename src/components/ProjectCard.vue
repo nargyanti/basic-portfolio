@@ -1,5 +1,4 @@
 <script setup>
-import { Icon } from "@iconify/vue";
 import IconText from "@/components/IconText.vue";
 import NavLink from "@/components/NavLink.vue";
 

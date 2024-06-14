@@ -3,9 +3,9 @@ import { ref } from "vue";
 import { RouterLink, RouterView } from "vue-router";
 import { Icon } from "@iconify/vue";
 
-import NavLink from "@/components/NavLink.vue";
-
 import data from "@/assets/data.json";
+
+import NavLink from "@/components/NavLink.vue";
 import ExternalLink from "./components/ExternalLink.vue";
 
 const { profile } = data;

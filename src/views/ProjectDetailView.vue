@@ -1,13 +1,19 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { useRouter } from "vue-router";
-import ItemList from "@/components/ItemList.vue";
-import data from "@/assets/data.json";
 import { Icon } from "@iconify/vue";
+
+import data from "@/assets/data.json";
+
+import ItemList from "@/components/ItemList.vue";
 import NavLink from "@/components/NavLink.vue";
 import SectionTitle from "@/components/SectionTitle.vue";
+import IconText from "@/components/IconText.vue";
+import PrimaryButton from "@/components/PrimaryButton.vue";
+import ExternalLink from "@/components/ExternalLink.vue";
 
 const router = useRouter();
+
 const project = ref(null);
 
 onMounted(() => {
@@ -25,8 +31,7 @@ function getProjectBySlug(slug) {
         <section class="bg-primary-light px-6 pb-7 pt-7 md:px-10 md:pb-14">
             <div class="mb-6">
                 <NavLink :to="{ path: '/', hash: '#projects' }" class="text-primary">
-                    <Icon icon="mdi:arrow-left-thin" class="mb-1 inline" width="24px" height="24px" />
-                    Back to projects
+                    <IconText icon="mdi:arrow-left-thin" text="Back to projects" iconSize="24" />
                 </NavLink>
             </div>
             <div class="mx-auto flex max-w-screen-xl flex-col gap-8 lg:flex-row lg:gap-14">
@@ -43,14 +48,13 @@ function getProjectBySlug(slug) {
                     </p>
                     <ItemList :items="project.tools" :column="2" />
                     <div class="mt-6 flex items-center gap-6">
-                        <RouterLink :to="{ path: '/', hash: '#contact' }"
-                            class="rounded-lg bg-primary px-5 py-3 font-semibold text-white hover:bg-primary-dark">
-                            Source code</RouterLink>
-                        <a href="/CV - Nabilah Argyanti.pdf" target="_blank" rel="noopener noreferrer"
-                            class="font-semibold text-primary hover:underline">View demo
-                            <Icon icon="heroicons:arrow-top-right-on-square-16-solid" class="mx-1 mb-1 inline"
-                                width="20" height="20" />
-                        </a>
+                        <RouterLink :to="{ path: '/', hash: '#contact' }">
+                            <PrimaryButton>Source code</PrimaryButton>
+                        </RouterLink>
+                        <ExternalLink :url="`https://google.com`" class="font-semibold text-primary hover:underline">
+                            <IconText :icon="'heroicons:arrow-top-right-on-square-16-solid'" :iconPosition="'right'"
+                                :text="'View demo'" />
+                        </ExternalLink>
                     </div>
                 </div>
             </div>
@@ -75,7 +79,11 @@ function getProjectBySlug(slug) {
         </section>
     </div>
     <div v-else>
-        <p>Loading...</p>
+        <section class="bg-white px-6 py-7 md:px-10">
+            <div class="mx-auto max-w-screen-xl">
+                <p class="text-gray-600">Loading...</p>
+            </div>
+        </section>
     </div>
 </template>
 
