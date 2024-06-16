@@ -12,7 +12,8 @@ import SecondaryButton from "@/components/SecondaryButton.vue";
 import SectionTitle from "@/components/SectionTitle.vue";
 import TimelineList from "@/components/TimelineList.vue";
 
-const { profile, education, technical_skills, work_experience, projects } = data;
+const { profile, education, technical_skills, work_experience, projects } =
+    data;
 </script>
 
 <template>
@@ -26,9 +27,14 @@ const { profile, education, technical_skills, work_experience, projects } = data
             <!-- Bio -->
             <div class="flex flex-col gap-6">
                 <h1 class="text-center text-3xl font-bold text-gray-700 md:text-5xl lg:text-start">
-                    Hi there! I'm <span class="block text-primary underline md:inline">{{ profile.name }}</span>
+                    Hi there! I'm
+                    <span class="block text-primary underline md:inline">{{
+                        profile.name
+                    }}</span>
                 </h1>
-                <p class="text-justify text-gray-600 lg:text-start">{{ profile.bio }}</p>
+                <p class="text-justify text-gray-600 lg:text-start">
+                    {{ profile.bio }}
+                </p>
                 <div class="flex items-center justify-center gap-6 lg:justify-start">
                     <RouterLink :to="{ path: '/', hash: '#contact' }">
                         <PrimaryButton>Get in touch</PrimaryButton>
@@ -46,7 +52,7 @@ const { profile, education, technical_skills, work_experience, projects } = data
     <section id="about" class="bg-primary-light px-6 py-7 md:px-10 md:py-12">
         <div class="mx-auto flex max-w-screen-xl flex-col gap-14 md:flex-row md:justify-between lg:gap-20">
             <!-- Background -->
-            <div class="flex flex-col gap-14 w-full md:max-w-1/2">
+            <div class="md:max-w-1/2 flex w-full flex-col gap-14">
                 <!-- Education -->
                 <div id="education">
                     <SectionTitle class="pb-8">Education</SectionTitle>
@@ -67,7 +73,7 @@ const { profile, education, technical_skills, work_experience, projects } = data
             </div>
 
             <!-- Work Experience -->
-            <div id="work-experience" class="w-full md:max-w-1/2">
+            <div id="work-experience" class="md:max-w-1/2 w-full">
                 <SectionTitle class="pb-8">Work Experience</SectionTitle>
                 <TimelineList :activities="work_experience" />
             </div>
@@ -75,11 +81,12 @@ const { profile, education, technical_skills, work_experience, projects } = data
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="bg-primary-light px-6 pb-14 pt-7 md:px-10 md:px-12 md:pt-14">
+    <section id="projects" class="bg-primary-light px-6 pb-16 pt-7 md:px-10 md:pb-20 md:pt-12">
         <div class="mx-auto max-w-screen-xl">
             <SectionTitle>Project Showcase</SectionTitle>
             <p class="pt-3 text-gray-600">
-                These are projects I've completed, providing effective solutions to diverse problems.
+                These are projects I've completed, providing effective solutions
+                to diverse problems.
             </p>
 
             <div class="flex flex-col items-center pt-8">
@@ -96,9 +103,12 @@ const { profile, education, technical_skills, work_experience, projects } = data
     <!-- CTA -->
     <section id="contact" class="bg-primary px-6 py-16 md:px-10">
         <div class="mx-auto flex max-w-screen-xl flex-col items-center justify-center gap-4">
-            <h2 class="text-center text-4xl font-bold text-white">Let's Collaborate!</h2>
+            <h2 class="text-center text-4xl font-bold text-white">
+                Let's Collaborate!
+            </h2>
             <p class="text-center text-lg text-white">
-                Ready to discuss projects, ideas, or just connect? Feel free to reach out to me
+                Ready to discuss projects, ideas, or just connect? Feel free to
+                reach out to me
             </p>
             <ExternalLink :url="`mailto:${profile.email}`">
                 <SecondaryButton>

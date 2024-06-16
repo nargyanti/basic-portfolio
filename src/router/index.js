@@ -1,17 +1,27 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "@/views/HomeView.vue";
 import ProjectDetailView from "@/views/ProjectDetailView.vue";
+import NotFoundView from "@/views/NotFoundView.vue";
 
 const routes = [
     {
         path: "/",
-        name: "home",
+        name: "Home",
         component: HomeView,
     },
     {
         path: "/project/:slug",
-        name: "project_detail",
+        name: "ProjectDetail",
         component: ProjectDetailView,
+    },
+    {
+        path: "/project/:afterProject(.*)",
+        component: NotFoundView,
+    },
+    {
+        path: "/:pathMatch(.*)*",
+        name: "NotFound",
+        component: NotFoundView,
     },
 ];
 
