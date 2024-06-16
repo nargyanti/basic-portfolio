@@ -32,7 +32,7 @@ const { profile, education, technical_skills, work_experience, projects } =
                         profile.name
                     }}</span>
                 </h1>
-                <p class="text-justify text-gray-600 lg:text-start">
+                <p class="text-justify lg:text-start">
                     {{ profile.bio }}
                 </p>
                 <div class="flex items-center justify-center gap-6 lg:justify-start">
@@ -67,7 +67,7 @@ const { profile, education, technical_skills, work_experience, projects } =
                         <ProfileCard :icon="technical_skill.icon" :title="technical_skill.category"
                             :sub_title="technical_skill.degree" :description="technical_skill.description"
                             :items="technical_skill.skills"
-                            :class="`${index === technical_skills.length - 1 ? '' : 'pb-6'}`" />
+                            :class="`${index === technical_skills.length - 1 ? '' : 'pb-8'}`" />
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@ const { profile, education, technical_skills, work_experience, projects } =
     <section id="projects" class="bg-primary-light px-6 pb-16 pt-7 md:px-10 md:pb-20 md:pt-12">
         <div class="mx-auto max-w-screen-xl">
             <SectionTitle>Project Showcase</SectionTitle>
-            <p class="pt-3 text-gray-600">
+            <p class="pt-3">
                 These are projects I've completed, providing effective solutions
                 to diverse problems.
             </p>

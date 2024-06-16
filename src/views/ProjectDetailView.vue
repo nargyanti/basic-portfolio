@@ -10,6 +10,7 @@ import SectionTitle from "@/components/SectionTitle.vue";
 import IconText from "@/components/IconText.vue";
 import PrimaryButton from "@/components/PrimaryButton.vue";
 import ExternalLink from "@/components/ExternalLink.vue";
+import MarkdownRenderer from "@/components/MarkdownRenderer.vue";
 
 const router = useRouter();
 const project = ref(null);
@@ -17,10 +18,12 @@ const project = ref(null);
 async function getProjectBySlug(slug) {
     const foundProject = data.projects.find((project) => project.slug === slug) || null;
     if (!foundProject) {
-        console.error(`Project with slug ${slug} not found.`);
+        console.error(`Project dengan slug ${slug} tidak ditemukan.`);
     }
     return foundProject;
 }
+
+const text = project.detail;
 
 onMounted(async () => {
     const { slug } = router.currentRoute.value.params;
@@ -28,12 +31,13 @@ onMounted(async () => {
     if (!project.value) {
         router.push({ name: 'NotFound' });
     }
+    console.log(project.value.detail)
 });
 </script>
 
 <template>
     <div v-if="project" class="pb-14">
-        <section class="bg-primary-light px-6 pb-7 pt-6 md:px-10 md:pb-14">
+        <section class="bg-primary-light px-6 pt-6 md:px-10 pb-7">
             <!-- Navigation -->
             <div class="mb-6 mx-auto max-w-screen-xl">
                 <NavLink :to="{ path: '/', hash: '#projects' }" class="text-primary">
@@ -52,11 +56,11 @@ onMounted(async () => {
                     <h1 class="text-center text-2xl lg:text-3xl font-semibold text-gray-700 md:text-start">
                         {{ project.title }}
                     </h1>
-                    <p class="text-center text-gray-600 px-3 md:px-0 md:text-start">
+                    <p class="text-center px-3 md:px-0 md:text-start">
                         {{ project.description }}
                     </p>
-                    <ItemList :items="project.tools" :column="2" />
-                    <div class="mt-6 flex items-center gap-6">
+                    <!-- <ItemList :items="project.tools" :column="2" /> -->
+                    <div class="flex items-center gap-6">
                         <ExternalLink v-if="project.source_code_url" :url="project.source_code_url">
                             <PrimaryButton>Source code</PrimaryButton>
                         </ExternalLink>
@@ -68,39 +72,20 @@ onMounted(async () => {
                     </div>
                 </div>
             </div>
-
-
         </section>
 
         <!-- Overview -->
-        <section v-if="project.overview" class="bg-white px-6 py-6 md:px-10">
+        <div class="bg-white px-6 md:px-10">
             <div class="mx-auto max-w-screen-xl">
-                <SectionTitle class="mb-4">Overview</SectionTitle>
-                <p class="text-gray-600">{{ project.overview }}</p>
+                <MarkdownRenderer :path="project.detail" />
             </div>
-        </section>
-
-        <!-- Features -->
-        <section v-if="project.features" class="bg-white px-6 py-6 md:px-10">
-            <div class="mx-auto max-w-screen-xl">
-                <SectionTitle class="mb-4">Features</SectionTitle>
-                <ItemList :items="project.features" :column="1" />
-            </div>
-        </section>
-
-        <!-- Challenges -->
-        <section v-if="project.challenges" class="bg-white px-6 py-6 md:px-10">
-            <div class="mx-auto max-w-screen-xl">
-                <SectionTitle class="mb-4">Challenges</SectionTitle>
-                <p class="text-gray-600">{{ project.challenges }}</p>
-            </div>
-        </section>
+        </div>
     </div>
     <div v-else>
         <!-- Loading -->
-        <section class="bg-white px-6 py-7 md:px-10">
+        <section class="bg-white px-6 pb-7 md:px-10">
             <div class="mx-auto max-w-screen-xl">
-                <p class="text-gray-600">Loading...</p>
+                <p>Loading...</p>
             </div>
         </section>
     </div>

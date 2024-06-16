@@ -9,10 +9,10 @@ import PrimaryButton from '@/components/PrimaryButton.vue';
                 <h1 class="text-primary mb-4 text-7xl font-bold tracking-tight lg:text-9xl">
                     404
                 </h1>
-                <p class="mb-4 text-3xl font-bold tracking-tight text-gray-600 md:text-4xl">
+                <p class="mb-4 text-3xl font-bold tracking-tight md:text-4xl">
                     Something's missing.
                 </p>
-                <p class="mb-4 text-lg font-light text-gray-600">
+                <p class="mb-4 text-lg font-light">
                     Sorry, we can't find that page. You'll find lots to explore
                     on the home page.
                 </p>

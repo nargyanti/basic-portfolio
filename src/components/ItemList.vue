@@ -26,7 +26,7 @@ const gridColumn = computed(() => {
     <ul class="grid gap-y-1 gap-x-5" :class="gridColumn">
         <li v-for="item in items" :key="item.id" class="flex items-start py-1">
             <Icon icon="f7:bolt-fill" class="mr-2 mt-1 flex-shrink-0 text-primary" width="20" height="20" />
-            <span class="flex-grow text-gray-600">{{ item }}</span>
+            <span class="flex-grow">{{ item }}</span>
         </li>
     </ul>
 </template>

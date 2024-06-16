@@ -30,8 +30,8 @@ defineProps({
             <div class="flex flex-col gap-0">
                 <h3 class="text-xl font-semibold text-gray-700">{{ title }}</h3>
             </div>
-            <p class="text-gray-600">{{ description }}</p>
-            <div class="pt-2" v-if="items?.length > 0">
+            <p>{{ description }}</p>
+            <div v-if="items?.length > 0">
                 <ItemList :items="items" :column="column" />
             </div>
         </div>
