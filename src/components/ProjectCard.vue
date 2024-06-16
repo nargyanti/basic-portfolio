@@ -16,7 +16,7 @@ defineProps({
             class="aspect-video object-cover object-top transition duration-200" />
 
         <div class="flex flex-grow flex-col justify-between gap-1 px-7 py-5">
-            <div class="mb-8 flex-grow">
+            <div class="mb-12 flex-grow">
                 <h3 class="text-xl font-semibold">
                     {{ title }}
                 </h3>
