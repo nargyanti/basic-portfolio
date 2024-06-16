@@ -20,10 +20,8 @@ const toggleMenu = () => {
 <template>
     <div class="flex min-h-screen flex-col">
         <!-- Header -->
-        <header
-            class="h-[calc(100vh - 64px)] sticky top-0 z-50 border-b border-b-gray-200 bg-primary-light px-6 py-4 md:px-10">
-            <div
-                class="mx-auto flex max-w-screen-xl flex-col items-center drop-shadow-sm md:flex-row md:justify-between">
+        <header class="h-[calc(100vh - 64px)] sticky top-0 z-50 drop-shadow-sm bg-primary-light px-6 py-4 md:px-10">
+            <div class="mx-auto flex max-w-screen-xl flex-col items-center md:flex-row md:justify-between">
                 <div class="flex w-full items-center justify-between md:w-auto">
                     <!-- Logo -->
                     <RouterLink :to="{ path: '/' }" class="text-lg font-semibold md:text-xl">

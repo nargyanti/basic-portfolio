@@ -12,7 +12,8 @@ defineProps({
 
 <template>
     <ol class="relative ms-4 border-s-2 border-primary-content">
-        <li v-for="(activity, index) in activities" :key="index" class="mb-10 ms-10">
+        <li v-for="(activity, index) in activities" :key="index" class="ms-10"
+            :class="{ 'mb-10': index !== activities.length - 1 }">
             <span class="absolute -start-3 flex w-6 items-center justify-center">
                 <IconWrapper :icon="activity.icon" />
             </span>
@@ -25,4 +26,5 @@ defineProps({
             </div>
         </li>
     </ol>
+
 </template>

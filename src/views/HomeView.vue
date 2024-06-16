@@ -30,7 +30,7 @@ const { profile, education, technical_skills, work_experience, projects } =
                     Hi there! I'm
                     <span class="block text-primary underline md:inline">{{
                         profile.name
-                        }}</span>
+                    }}</span>
                 </h1>
                 <p class="text-justify lg:text-start">
                     {{ profile.bio }}
@@ -82,7 +82,7 @@ const { profile, education, technical_skills, work_experience, projects } =
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="bg-primary-light px-6 pb-16 pt-7 md:px-10 md:pb-20 md:pt-12">
+    <section id="projects" class="bg-primary-light px-6 pb-20 pt-7 md:px-10 md:pt-12 md:pb-24">
         <div class="mx-auto max-w-screen-xl">
             <SectionTitle>Project Showcase</SectionTitle>
             <p class="pt-3">
