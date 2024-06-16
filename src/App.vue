@@ -18,15 +18,15 @@ const toggleMenu = () => {
 </script>
 
 <template>
-    <div class="min-h-screen flex flex-col">
+    <div class="flex min-h-screen flex-col">
         <!-- Header -->
         <header
-            class="bg-primary-light sticky top-0 z-50 border-b border-b-gray-200 px-6 py-4 md:px-10 h-[calc(100vh - 64px)]">
+            class="h-[calc(100vh - 64px)] sticky top-0 z-50 border-b border-b-gray-200 bg-primary-light px-6 py-4 md:px-10">
             <div
                 class="mx-auto flex max-w-screen-xl flex-col items-center drop-shadow-sm md:flex-row md:justify-between">
                 <div class="flex w-full items-center justify-between md:w-auto">
                     <!-- Logo -->
-                    <RouterLink :to="{ path: '/' }" class="text-lg font-semibold text-gray-700 md:text-xl">
+                    <RouterLink :to="{ path: '/' }" class="text-lg font-semibold md:text-xl">
                         nargyanti<span class="text-primary">.</span></RouterLink>
 
                     <!-- Hamburger Menu -->
@@ -54,7 +54,7 @@ const toggleMenu = () => {
         </main>
 
         <!-- Footer -->
-        <footer class="border-t border-t-gray-200 bg-primary px-6 py-4 md:px-10 h-[calc(100vh - 64px)]">
+        <footer class="h-[calc(100vh - 64px)] border-t border-t-gray-200 bg-primary px-6 py-4 md:px-10">
             <div class="mx-auto flex max-w-screen-xl flex-col items-center gap-4 md:flex-row md:justify-between">
                 <!-- Credit -->
                 <p class="text-center text-white">

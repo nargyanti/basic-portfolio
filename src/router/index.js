@@ -15,10 +15,6 @@ const routes = [
         component: ProjectDetailView,
     },
     {
-        path: "/project/:afterProject(.*)",
-        component: NotFoundView,
-    },
-    {
         path: "/:pathMatch(.*)*",
         name: "NotFound",
         component: NotFoundView,

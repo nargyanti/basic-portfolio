@@ -17,10 +17,10 @@ defineProps({
 
         <div class="flex flex-grow flex-col justify-between gap-1 px-7 py-5">
             <div class="mb-8 flex-grow">
-                <h3 class="text-xl font-semibold text-gray-700">
+                <h3 class="text-xl font-semibold">
                     {{ title }}
                 </h3>
-                <p class="pt-4 text-gray-600">{{ description }}</p>
+                <p class="pt-4">{{ description }}</p>
             </div>
             <NavLink :to="{ path: `/project/${slug}` }" class="self-end text-primary">
                 <IconText :icon="'mdi:arrow-right-thin'" :text="'Detail'" :iconPosition="'right'" :iconSize="22" />

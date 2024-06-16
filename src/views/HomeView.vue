@@ -26,13 +26,13 @@ const { profile, education, technical_skills, work_experience, projects } =
 
             <!-- Bio -->
             <div class="flex flex-col gap-6">
-                <h1 class="text-center text-3xl font-bold text-gray-700 md:text-5xl lg:text-start">
+                <h1 class="text-center text-3xl font-bold md:text-5xl lg:text-start">
                     Hi there! I'm
                     <span class="block text-primary underline md:inline">{{
                         profile.name
-                    }}</span>
+                        }}</span>
                 </h1>
-                <p class="text-justify text-gray-600 lg:text-start">
+                <p class="text-justify lg:text-start">
                     {{ profile.bio }}
                 </p>
                 <div class="flex items-center justify-center gap-6 lg:justify-start">
@@ -57,7 +57,8 @@ const { profile, education, technical_skills, work_experience, projects } =
                 <div id="education">
                     <SectionTitle class="pb-8">Education</SectionTitle>
                     <ProfileCard :icon="education.icon" :title="education.institution" :sub_title="education.degree"
-                        :description="education.thesis" :items="education.subjects" :column="1" />
+                        :description="education.thesis" :list_title="'Relevant subjects:'" :items="education.subjects"
+                        :column="1" />
                 </div>
 
                 <!-- Skills -->
@@ -84,7 +85,7 @@ const { profile, education, technical_skills, work_experience, projects } =
     <section id="projects" class="bg-primary-light px-6 pb-16 pt-7 md:px-10 md:pb-20 md:pt-12">
         <div class="mx-auto max-w-screen-xl">
             <SectionTitle>Project Showcase</SectionTitle>
-            <p class="pt-3 text-gray-600">
+            <p class="pt-3">
                 These are projects I've completed, providing effective solutions
                 to diverse problems.
             </p>
