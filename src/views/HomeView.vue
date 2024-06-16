@@ -28,9 +28,7 @@ const { profile, education, technical_skills, work_experience, projects } =
             <div class="flex flex-col gap-6">
                 <h1 class="text-center text-3xl font-bold md:text-5xl lg:text-start">
                     Hi there! I'm
-                    <span class="block text-primary underline md:inline">{{
-                        profile.name
-                        }}</span>
+                    <span class="block text-primary underline md:inline">{{ profile.name }}</span>
                 </h1>
                 <p class="text-justify lg:text-start">
                     {{ profile.bio }}
