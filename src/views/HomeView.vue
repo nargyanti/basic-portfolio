@@ -30,7 +30,7 @@ const { profile, education, technical_skills, work_experience, projects } =
                     Hi there! I'm
                     <span class="block text-primary underline md:inline">{{
                         profile.name
-                    }}</span>
+                        }}</span>
                 </h1>
                 <p class="text-justify lg:text-start">
                     {{ profile.bio }}
@@ -91,7 +91,7 @@ const { profile, education, technical_skills, work_experience, projects } =
             </p>
 
             <div class="flex flex-col items-center pt-8">
-                <div class="grid gap-x-6 gap-y-6 pt-3 md:grid-cols-2 lg:grid-cols-3">
+                <div class="grid gap-x-7 gap-y-7 pt-3 md:grid-cols-2 lg:grid-cols-3">
                     <!-- Project -->
                     <ProjectCard v-for="(project, index) in projects" :key="index" :image="project.image"
                         :tags="project.tags" :title="project.title" :description="project.description"
