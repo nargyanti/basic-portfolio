@@ -14,11 +14,6 @@ import ExternalLink from "@/components/ExternalLink.vue";
 const router = useRouter();
 const project = ref(null);
 
-onMounted(async () => {
-    const { slug } = router.currentRoute.value.params;
-    project.value = await getProjectBySlug(slug);
-});
-
 async function getProjectBySlug(slug) {
     const foundProject = data.projects.find((project) => project.slug === slug) || null;
     if (!foundProject) {
@@ -26,6 +21,14 @@ async function getProjectBySlug(slug) {
     }
     return foundProject;
 }
+
+onMounted(async () => {
+    const { slug } = router.currentRoute.value.params;
+    project.value = await getProjectBySlug(slug);
+    if (!project.value) {
+        router.push({ name: 'NotFound' });
+    }
+});
 </script>
 
 <template>
