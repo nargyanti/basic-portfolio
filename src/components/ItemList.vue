@@ -26,11 +26,11 @@ const gridColumn = computed(() => {
 </script>
 
 <template>
-    <p v-if="list_title" class="mb-1">{{ list_title }}</p>
+    <p v-if="list_title" class="my-1 text-gray-700">{{ list_title }}</p>
     <ul class="grid gap-x-5 gap-y-1" :class="gridColumn">
         <li v-for="item in items" :key="item.id" class="flex items-start py-1">
             <Icon icon="f7:bolt-fill" class="mr-2 mt-1 flex-shrink-0 text-primary" width="20" height="20" />
-            <span class="flex-grow">{{ item }}</span>
+            <span class="flex-grow text-slate-700">{{ item }}</span>
         </li>
     </ul>
 </template>

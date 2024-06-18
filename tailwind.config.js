@@ -10,10 +10,10 @@ export default {
                 "primary-content": "#D5EFED",
                 "primary-light": "#FDFEFF",
             },
-            typography: {
+            typography: (theme) => ({
                 DEFAULT: {
                     css: {
-                        color: "#333",
+                        color: theme("colors.gray.700"),
                         a: {
                             color: "#378E87",
                             "&:hover": {
@@ -22,7 +22,7 @@ export default {
                         },
                     },
                 },
-            },
+            }),
         },
     },
     plugins: [require("@tailwindcss/typography")],

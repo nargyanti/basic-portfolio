@@ -26,11 +26,11 @@ const { profile, education, technical_skills, work_experience, projects } =
 
             <!-- Bio -->
             <div class="flex flex-col gap-6">
-                <h1 class="text-center text-3xl font-bold md:text-5xl lg:text-start">
+                <h1 class="text-center text-3xl font-bold text-gray-900 md:text-5xl lg:text-start">
                     Hi there! I'm
                     <span class="block text-primary underline md:inline">{{ profile.name }}</span>
                 </h1>
-                <p class="text-justify lg:text-start">
+                <p class="text-justify text-gray-700 lg:text-start">
                     {{ profile.bio }}
                 </p>
                 <div class="flex items-center justify-center gap-6 lg:justify-start">
@@ -80,10 +80,10 @@ const { profile, education, technical_skills, work_experience, projects } =
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="bg-primary-light px-6 pb-20 pt-7 md:px-10 md:pt-12 md:pb-24">
+    <section id="projects" class="bg-primary-light px-6 pb-20 pt-7 md:px-10 md:pb-24 md:pt-12">
         <div class="mx-auto max-w-screen-xl">
             <SectionTitle>Project Showcase</SectionTitle>
-            <p class="pt-3">
+            <p class="pt-3 text-gray-700">
                 These are projects I've completed, providing effective solutions
                 to diverse problems.
             </p>

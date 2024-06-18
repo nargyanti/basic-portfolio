@@ -6,7 +6,6 @@ import data from "@/assets/data.json";
 
 import ItemList from "@/components/ItemList.vue";
 import NavLink from "@/components/NavLink.vue";
-import SectionTitle from "@/components/SectionTitle.vue";
 import IconText from "@/components/IconText.vue";
 import PrimaryButton from "@/components/PrimaryButton.vue";
 import ExternalLink from "@/components/ExternalLink.vue";
@@ -32,13 +31,12 @@ onMounted(async () => {
     if (!project.value) {
         router.push({ name: "NotFound" });
     }
-    console.log(project.value.detail)
 });
 </script>
 
 <template>
     <div v-if="project" class="pb-14">
-        <section class="bg-primary-light px-6 pt-6 md:px-10 pb-7">
+        <section class="bg-primary-light px-6 pb-7 pt-6 md:px-10">
             <!-- Navigation -->
             <div class="mx-auto mb-6 max-w-screen-xl">
                 <NavLink :to="{ path: '/', hash: '#projects' }" class="block text-primary">
@@ -54,14 +52,14 @@ onMounted(async () => {
                 </div>
 
                 <div class="flex flex-col items-center gap-4 md:w-1/2 md:items-stretch lg:w-1/2">
-                    <h1 class="text-center text-2xl font-semibold md:text-start lg:text-3xl">
+                    <h1 class="text-center text-2xl font-semibold text-gray-900 md:text-start lg:text-3xl">
                         {{ project.title }}
                     </h1>
-                    <p class="text-center px-3 md:px-0 md:text-start">
+                    <p class="px-3 text-center text-gray-700 md:px-0 md:text-start">
                         {{ project.description }}
                     </p>
-                    <!-- <ItemList :items="project.tools" :column="2" /> -->
-                    <div class="flex items-center gap-6">
+                    <ItemList :items="project.tools" :column="2" />
+                    <div class="flex items-center gap-6 mt-4">
                         <ExternalLink v-if="project.source_code_url" :url="project.source_code_url">
                             <PrimaryButton>Source code</PrimaryButton>
                         </ExternalLink>
@@ -76,7 +74,7 @@ onMounted(async () => {
         </section>
 
         <!-- Overview -->
-        <div class="bg-white px-6 md:px-10">
+        <div v-if="project.detail" class="bg-white px-6 md:px-10">
             <div class="mx-auto max-w-screen-xl">
                 <MarkdownRenderer :path="project.detail" />
             </div>
@@ -86,7 +84,7 @@ onMounted(async () => {
         <!-- Loading -->
         <section class="bg-white px-6 pb-7 md:px-10">
             <div class="mx-auto max-w-screen-xl">
-                <p>Loading...</p>
+                <p class="text-gray-700">Loading...</p>
             </div>
         </section>
     </div>

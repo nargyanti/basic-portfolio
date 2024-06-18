@@ -20,11 +20,11 @@ const toggleMenu = () => {
 <template>
     <div class="flex min-h-screen flex-col">
         <!-- Header -->
-        <header class="h-[calc(100vh - 64px)] sticky top-0 z-50 drop-shadow-sm bg-primary-light px-6 py-4 md:px-10">
+        <header class="h-[calc(100vh - 64px)] sticky top-0 z-50 bg-primary-light px-6 py-4 drop-shadow-sm md:px-10">
             <div class="mx-auto flex max-w-screen-xl flex-col items-center md:flex-row md:justify-between">
                 <div class="flex w-full items-center justify-between md:w-auto">
                     <!-- Logo -->
-                    <RouterLink :to="{ path: '/' }" class="text-lg font-semibold md:text-xl">
+                    <RouterLink :to="{ path: '/' }" class="text-lg font-semibold text-gray-900 md:text-xl">
                         nargyanti<span class="text-primary">.</span></RouterLink>
 
                     <!-- Hamburger Menu -->
@@ -37,10 +37,10 @@ const toggleMenu = () => {
                 <!-- Navigation -->
                 <nav :class="{ hidden: !showMenu }"
                     class="flex flex-col gap-4 pt-6 text-center md:flex md:flex-row md:gap-10 md:pt-0">
-                    <NavLink :to="{ path: '/' }">Home</NavLink>
-                    <NavLink :to="{ path: '/', hash: '#about' }">About</NavLink>
-                    <NavLink :to="{ path: '/', hash: '#projects' }">Projects</NavLink>
-                    <NavLink :to="{ path: '/', hash: '#contact' }">Contact</NavLink>
+                    <NavLink :to="{ path: '/' }" class="text-gray-900">Home</NavLink>
+                    <NavLink :to="{ path: '/', hash: '#about' }" class="text-gray-900">About</NavLink>
+                    <NavLink :to="{ path: '/', hash: '#projects' }" class="text-gray-900">Projects</NavLink>
+                    <NavLink :to="{ path: '/', hash: '#contact' }" class="text-gray-900">Contact</NavLink>
                 </nav>
             </div>
         </header>

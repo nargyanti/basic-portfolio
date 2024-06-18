@@ -17,14 +17,13 @@ defineProps({
             <span class="absolute -start-3 flex w-6 items-center justify-center">
                 <IconWrapper :icon="activity.icon" />
             </span>
-            <h3 class="text-xl font-semibold">
+            <h3 class="text-xl font-semibold text-gray-900">
                 {{ activity.title }}
             </h3>
-            <span class="font-light">{{ activity.period }}</span>
+            <span class="text-gray-500">{{ activity.period }}</span>
             <div class="pt-2" v-if="activity.jobdesk?.length > 0">
                 <ItemList :items="activity.jobdesk" :column="1" />
             </div>
         </li>
     </ol>
-
 </template>
