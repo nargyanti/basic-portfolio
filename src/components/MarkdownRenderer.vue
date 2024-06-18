@@ -35,8 +35,7 @@ onMounted(() => {
 
 <template>
     <div v-if="path">
-        <article
-            class="prose max-w-none prose-headings:font-semibold prose-headings:text-gray-900"
+        <article class="prose max-w-none prose-headings:font-semibold prose-headings:text-gray-900"
             v-html="markdownContent"></article>
     </div>
 </template>

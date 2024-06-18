@@ -18,7 +18,7 @@ const { profile, education, technical_skills, work_experience, projects } =
 
 <template>
     <!-- Hero -->
-    <section id="hero" class="bg-primary-light px-6 py-7 md:px-10 md:py-12">
+    <section id="hero" class="px-6 py-7 md:px-10 md:py-12">
         <div
             class="mx-auto flex max-w-screen-xl flex-col items-center gap-6 lg:flex-row-reverse lg:items-start lg:gap-14">
             <!-- Profile Picture -->
@@ -109,7 +109,7 @@ const { profile, education, technical_skills, work_experience, projects } =
                 Ready to discuss projects, ideas, or just connect? Feel free to
                 reach out to me
             </p>
-            <ExternalLink :url="`mailto:${profile.email}`">
+            <ExternalLink :url="`mailto:${profile.email}`" class="mt-4">
                 <SecondaryButton>
                     <IconText :icon="'material-symbols:mail'" :text="profile.email" :iconSize="28" />
                 </SecondaryButton>

@@ -1,6 +1,6 @@
 <template>
     <button
-        class="mt-4 flex items-center rounded-lg bg-white px-5 py-3 font-semibold text-primary hover:bg-primary-dark hover:text-white">
+        class="flex items-center rounded-lg border-2 border-primary bg-white px-4 py-2 font-medium text-primary hover:border-primary-dark hover:bg-primary-dark hover:text-white">
         <slot></slot>
     </button>
 </template>

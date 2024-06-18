@@ -1,0 +1,84 @@
+<script setup>
+import { ref, onMounted } from "vue";
+import { useRouter } from "vue-router";
+
+import data from "@/assets/data.json";
+
+import ItemList from "@/components/ItemList.vue";
+import NavLink from "@/components/NavLink.vue";
+import IconText from "@/components/IconText.vue";
+import PrimaryButton from "@/components/PrimaryButton.vue";
+import ExternalLink from "@/components/ExternalLink.vue";
+import MarkdownRenderer from "@/components/MarkdownRenderer.vue";
+
+const router = useRouter();
+const project = ref(null);
+
+async function getProjectBySlug(slug) {
+    const foundProject =
+        data.projects.find((project) => project.slug === slug) || null;
+    if (!foundProject) {
+        console.error(`Project dengan slug ${slug} tidak ditemukan.`);
+    }
+    return foundProject;
+}
+
+const text = project.detail;
+
+onMounted(async () => {
+    const { slug } = router.currentRoute.value.params;
+    project.value = await getProjectBySlug(slug);
+    if (!project.value) {
+        router.push({ name: "NotFound" });
+    }
+});
+</script>
+
+<template>
+    <div v-if="project" class="pb-14">
+        <!-- Hero -->
+        <section class="bg-primary-light px-6 pb-7 pt-6 md:px-10 md:py-10">
+            <div
+                class="mx-auto flex max-w-screen-lg flex-col items-center gap-8 md:flex-row md:items-stretch lg:gap-14">
+                <div class="w-full flex-grow overflow-hidden rounded-lg md:w-1/2 lg:w-1/2">
+                    <img class="h-full w-full object-cover" :src="project.image" :alt="project.title" />
+                </div>
+
+                <div class="flex flex-col items-center gap-4 md:w-1/2 md:items-stretch lg:w-1/2">
+                    <h1 class="text-center text-2xl font-semibold text-gray-900 md:text-start lg:text-3xl">
+                        {{ project.title }}
+                    </h1>
+                    <p class="px-3 text-center text-gray-700 md:px-0 md:text-start">
+                        {{ project.description }}
+                    </p>
+                    <ItemList :items="project.tools" :column="2" />
+                    <div class="flex items-center gap-6 mt-4">
+                        <ExternalLink v-if="project.source_code_url" :url="project.source_code_url">
+                            <PrimaryButton>Source code</PrimaryButton>
+                        </ExternalLink>
+                        <ExternalLink v-if="project.demo_url" :url="project.demo_url"
+                            class="font-semibold text-primary hover:underline">
+                            <IconText :icon="'heroicons:arrow-top-right-on-square-16-solid'" :iconPosition="'right'"
+                                :text="'View demo'" />
+                        </ExternalLink>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview -->
+        <div v-if="project.detail" class="bg-white px-6 md:px-10">
+            <div class="mx-auto max-w-screen-lg">
+                <MarkdownRenderer :path="project.detail" />
+            </div>
+        </div>
+    </div>
+    <div v-else>
+        <!-- Loading -->
+        <section class="bg-white px-6 pb-7 md:px-10">
+            <div class="mx-auto max-w-screen-lg">
+                <p class="text-gray-700">Loading...</p>
+            </div>
+        </section>
+    </div>
+</template>
