@@ -15,10 +15,6 @@ const routes = [
         component: ProjectDetailView,
     },
     {
-        path: "/project/:afterProject(.*)",
-        component: NotFoundView,
-    },
-    {
         path: "/:pathMatch(.*)*",
         name: "NotFound",
         component: NotFoundView,
@@ -32,7 +28,7 @@ const router = createRouter({
         if (to.hash) {
             return {
                 el: to.hash,
-                top: 18,
+                top: 24,
                 behavior: "smooth",
             };
         }

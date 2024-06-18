@@ -10,7 +10,7 @@ defineProps({
 </script>
 
 <template>
-    <RouterLink :to="to" class="font-semibold transition duration-100 hover:text-primary-dark hover:underline">
+    <RouterLink :to="to" class="font-semibold transition duration-100 hover:text-primary hover:underline">
         <slot></slot>
     </RouterLink>
 </template>

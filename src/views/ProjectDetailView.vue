@@ -16,7 +16,8 @@ const router = useRouter();
 const project = ref(null);
 
 async function getProjectBySlug(slug) {
-    const foundProject = data.projects.find((project) => project.slug === slug) || null;
+    const foundProject =
+        data.projects.find((project) => project.slug === slug) || null;
     if (!foundProject) {
         console.error(`Project dengan slug ${slug} tidak ditemukan.`);
     }
@@ -29,7 +30,7 @@ onMounted(async () => {
     const { slug } = router.currentRoute.value.params;
     project.value = await getProjectBySlug(slug);
     if (!project.value) {
-        router.push({ name: 'NotFound' });
+        router.push({ name: "NotFound" });
     }
     console.log(project.value.detail)
 });
@@ -39,21 +40,21 @@ onMounted(async () => {
     <div v-if="project" class="pb-14">
         <section class="bg-primary-light px-6 pt-6 md:px-10 pb-7">
             <!-- Navigation -->
-            <div class="mb-6 mx-auto max-w-screen-xl">
-                <NavLink :to="{ path: '/', hash: '#projects' }" class="text-primary">
+            <div class="mx-auto mb-6 max-w-screen-xl">
+                <NavLink :to="{ path: '/', hash: '#projects' }" class="block text-primary">
                     <IconText icon="mdi:arrow-left-thin" text="Back to projects" iconSize="24" />
                 </NavLink>
             </div>
 
             <!-- Hero -->
             <div
-                class="mx-auto flex max-w-screen-xl flex-col items-center md:items-stretch gap-8 md:flex-row lg:gap-14">
-                <div class="flex-grow w-full md:w-1/2 lg:w-1/2 overflow-hidden rounded-lg">
-                    <img class="w-full h-full object-cover" :src="project.image" :alt="project.title" />
+                class="mx-auto flex max-w-screen-xl flex-col items-center gap-8 md:flex-row md:items-stretch lg:gap-14">
+                <div class="w-full flex-grow overflow-hidden rounded-lg md:w-1/2 lg:w-1/2">
+                    <img class="h-full w-full object-cover" :src="project.image" :alt="project.title" />
                 </div>
 
-                <div class="flex flex-col items-center gap-4 md:items-stretch md:w-1/2 lg:w-1/2">
-                    <h1 class="text-center text-2xl lg:text-3xl font-semibold text-gray-700 md:text-start">
+                <div class="flex flex-col items-center gap-4 md:w-1/2 md:items-stretch lg:w-1/2">
+                    <h1 class="text-center text-2xl font-semibold md:text-start lg:text-3xl">
                         {{ project.title }}
                     </h1>
                     <p class="text-center px-3 md:px-0 md:text-start">
