@@ -20,7 +20,7 @@ const toggleMenu = () => {
 <template>
     <div class="flex min-h-screen flex-col">
         <!-- Header -->
-        <header class="h-[calc(100vh - 64px)] sticky top-0 z-50 bg-primary-light px-6 py-4 drop-shadow-sm md:px-10">
+        <header class="h-[calc(100vh - 64px)] sticky top-0 z-50 bg-primary-light px-6 py-4 drop-shadow md:px-10">
             <div class="mx-auto flex max-w-screen-xl flex-col items-center md:flex-row md:justify-between">
                 <div class="flex w-full items-center justify-between md:w-auto">
                     <!-- Logo -->

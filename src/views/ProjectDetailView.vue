@@ -51,7 +51,7 @@ onMounted(async () => {
                         <SecondaryButton>View demo</SecondaryButton>
                     </ExternalLink>
                 </div>
-                <img class="w-full object-cover rounded-lg" :src="project.image" :alt="project.title" />
+                <img class="w-full object-cover rounded-lg w-3/4" :src="project.image" :alt="project.title" />
             </div>
         </section>
 
