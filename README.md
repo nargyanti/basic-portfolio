@@ -1,35 +1,83 @@
-# basic-portfolio
+# Web Developer Portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+Welcome to Web Developer Portfolio! This project is built using Vue.js for the frontend framework and Tailwind CSS for styling.
 
-## Recommended IDE Setup
+## Table of Contents
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+-   [Demo](#demo)
+-   [Features](#features)
+-   [Installation](#installation)
+-   [Usage](#usage)
+-   [Contributing](#contributing)
+-   [License](#license)
 
-## Customize configuration
+## Demo
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Check out the live demo of the portfolio [here](https://nargyanti.github.io).
 
-## Project Setup
+## Features
+
+-   **Responsive Design**: Works on all devices - mobile, tablet, and desktop.
+-   **Modern UI**: Built with Tailwind CSS for a sleek, modern look.
+-   **Single Page Application**: Fast and responsive single-page application using Vue.js.
+-   **Portfolio Showcase**: Display the projects and skills, written with `marked.js` for easy Markdown formatting.
+-   **Contact**: Users can reach out via email.
+
+## Installation
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+-   Node.js
+-   npm (Node Package Manager)
+-   Vue CLI
+
+### Clone the repository
+
+```sh
+git clone https://github.com/nargyanti/basic-portfolio.git
+cd basic-portfolio
+```
+
+### Install dependencies
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Usage
+
+To start the development server, run:
 
 ```sh
-npm run dev
+npm run serve
 ```
 
-### Compile and Minify for Production
+Open http://localhost:5000 to view it in your browser. The page will reload if you make edits.
+
+To build the project for production, run:
 
 ```sh
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### Contributing
 
-```sh
-npm run lint
-```
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+1. Fork the Project
+2. Create your Feature Branch
+3. Commit your Changes
+4. Push to the Branch
+5. Open a Pull Request
+
+### License
+
+Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
+
+---
+
+This project is a part of my personal portfolio. You can check out more of my work at https://nargyanti.github.io
