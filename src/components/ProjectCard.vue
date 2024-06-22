@@ -1,19 +1,39 @@
 <script setup>
+import { ref } from "vue";
+import FallbackImage from "@/components/FallbackImage.vue";
 import IconText from "@/components/IconText.vue";
 import NavLink from "@/components/NavLink.vue";
 
 defineProps({
-    image: String,
-    title: String,
-    description: String,
-    slug: String,
+    image: {
+        type: String,
+    },
+    title: {
+        type: String,
+        required: true
+    },
+    description: {
+        type: String,
+        required: true
+    },
+    slug: {
+        type: String,
+        required: true
+    }
 });
+
+const showFallback = ref(false);
+
+const handleImageError = () => {
+    showFallback.value = true;
+};
 </script>
 
 <template>
     <div class="flex h-full flex-col overflow-hidden rounded-lg border border-gray-200">
-        <img :src="image" loading="lazy" :alt="title"
-            class="aspect-video object-cover object-top transition duration-200" />
+        <img :src="image" loading="lazy" :alt="title" @error="handleImageError" v-if="!showFallback"
+            class="aspect-video object-cover transition duration-200" />
+        <FallbackImage v-if="showFallback" :title="title" />
 
         <div class="flex flex-grow flex-col justify-between gap-1 px-7 py-5">
             <div class="mb-12 flex-grow">

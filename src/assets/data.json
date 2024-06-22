@@ -1,7 +1,7 @@
 {
     "profile": {
         "name": "Nabilah Argyanti",
-        "bio": "As a graduate of Informatics Engineering, I have a keen interest in web development and data science. With one year of industry experience, I am skilled in developing web applications. Currently, I am exploring innovative solutions using web technologies and studying the application of data science to solve problems. My skills include proficiency in Laravel and exploration of technologies such as Vue.js, Inertia, Tailwind, and data processing with Python.",
+        "bio": "I graduated in Informatics Engineering and have one year of industry experience. My main interests are web development and data processing. I am skilled in creating web applications, especially using Laravel and Vue.js. Currently, I'm exploring new web technologies and learning how data processing can solve practical problems effectively.",
         "resume_url": "/CV - Nabilah Argyanti.pdf",
         "email": "nargyanti@gmail.com",
         "image": "/images/profile-picture.webp",
@@ -13,25 +13,26 @@
     },
     "education": {
         "institution": "Politeknik Negeri Malang",
-        "icon": "teenyicons:school-solid",
+        "icon": "material-symbols:school",
         "degree": "Applied Bachelor of Informatics Engineering (2019-2023)",
         "thesis": "Thesis: Recipes Recommendation System Based on Ingredients Availability and User Preferences",
         "subjects": [
-            "Web Development",
-            "Data Science",
-            "Software Engineering"
+            "Advanced Web Programming",
+            "Cloud Computing",
+            "Advanced Database",
+            "Big Data"
         ]
     },
     "technical_skills": [
         {
             "icon": "material-symbols:web",
             "category": "Web Development",
-            "description": "I'm experienced in web development, crafting dynamic applications, managing CRUD operations proficiently, and addressing diverse web-based requirements adeptly.",
+            "description": "I'm experienced in web development, creating dynamic applications, managing complex data interactions efficiently, and addressing a wide range of web-based requirements effectively.",
             "skills": [
-                "HTML",
-                "CSS",
-                "VueJS",
                 "Laravel",
+                "Vue.js",
+                "CodeIgniter",
+                "Tailwind CSS",
                 "Django",
                 "WordPress"
             ]
@@ -39,11 +40,11 @@
         {
             "icon": "mdi:database-cog",
             "category": "Data Science",
-            "description": "I'm capable of analyzing data using various algorithms and techniques in data science to derive valuable insights and predictive solutions.",
+            "description": "I'm capable of processing and analyzing data using fundamental techniques in data science to extract meaningful insights and support data-driven decision-making.",
             "skills": [
                 "Python",
-                "Jupyter Notebook",
                 "Pandas",
+                "Matplotlib",
                 "Tensorflow"
             ]
         }
@@ -54,8 +55,9 @@
             "title": "Programmer at UPA TIK Politeknik Negeri Malang",
             "period": "September 2023 - June 2024",
             "jobdesk": [
-                "Developing the official website and the Public Information Disclosure Portal (PPID) for Politeknik Negeri Malang using WordPress and Elementor",
-                "Designing and developing an E-office website for digital correspondence within Politeknik Negeri Malang using Laravel"
+                "Redesigned the profile website of Politeknik Negeri Malang and its departments to enhance user experience and facilitate information delivery using WordPress and Elementor",
+                "Developed the PPID website for Politeknik Negeri Malang to ensure public information transparency using WordPress and Elementor",
+                "Created starter code with Laravel to streamline the development process and provide a template for customized system needs"
             ]
         },
         {
@@ -63,8 +65,8 @@
             "title": "Backend Developer at PT Adma Digital Solusi",
             "period": "August 2022 - December 2022",
             "jobdesk": [
-                "Managing recipe data and ingredients to recommend recipes using Python",
-                "Developing a recipe recommendation application based on ingredient availability using Django"
+                "Managed recipe and food ingredient data to recommend recipes through web scraping using Python",
+                "Developed a recipe recommendation system based on ingredient availability using Django"
             ]
         },
         {
@@ -72,114 +74,133 @@
             "title": "Web Developer at Awesome Language Stability",
             "period": "September 2021 - November 2021",
             "jobdesk": [
-                "Designing and developing a TOEFL prediction website using the CodeIgniter framework",
-                "Collaborating with the project team to integrate necessary services in the development of the TOEFL prediction website, ensuring its accuracy and reliability"
+                "Designed and developed a TOEFL prediction website using the CodeIgniter framework.",
+                "Collaborated with the project team to integrate necessary services in the development of the TOEFL prediction website, ensuring accuracy and reliability."
             ]
         }
     ],
     "projects": [
         {
-            "title": "Sistem Informasi Politeknik Negeri Malang",
-            "image": "https://lh4.googleusercontent.com/DzNngvGh7KkBNbrREmEE-6mEbSlVl7Vkm7JB1CUybacupHyC4xFGyUz2SW51r3pCpUp_R72GPjC9u0ifC8V0kg6lPMpsD7AUQH7VkZ-xht7Z0NZUodICX5VI4zHfca5yltqVPgXLhKc",
+            "title": "Politeknik Negeri Malang's Official Website",
+            "description": "Informative platform providing comprehensive information about academic programs, academic activities, and the latest news related to Politeknik Negeri Malang.",
+            "image": "https://i.pinimg.com/736x/3f/a3/6f/3fa36fffb537f3a19ce7af2458ed48e4.jpg",
             "tools": [
-                "Laravel",
-                "Bootstrap",
-                "MySQL",
-                "Nginx"
+                "WordPress",
+                "Elementor"
             ],
-            "description": "Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa.",
-            "slug": "sisfo-polinema",
-            "source_code_url": "https://example.com/project1-demo",
-            "demo_url": "https://example.com/project1-demo",            
-            "detail": "/markdown/index.md"
+            "slug": "polinema",
+            "demo_url": "",
+            "source_code_url": "",
+            "detail": "/markdown/polinema.md"
         },
         {
-            "title": "Sistem Informasi Politeknik Negeri Malang",
-            "image": "https://lh4.googleusercontent.com/DzNngvGh7KkBNbrREmEE-6mEbSlVl7Vkm7JB1CUybacupHyC4xFGyUz2SW51r3pCpUp_R72GPjC9u0ifC8V0kg6lPMpsD7AUQH7VkZ-xht7Z0NZUodICX5VI4zHfca5yltqVPgXLhKc",
+            "title": "Politeknik Negeri Malang's Department Website",
+            "description": "Informative platform providing comprehensive information about academic programs, academic activities, and the latest news related to the department at Politeknik Negeri Malang.",
+            "image": "/images/projects/department-polinema/department-polinema.webp",
             "tools": [
-                "Laravel",
-                "Bootstrap",
-                "MySQL",
-                "Nginx"
+                "WordPress",
+                "Elementor"
             ],
-            "description": "Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa.",
-            "slug": "sisfo-polinema",
-            "source_code": "https://example.com/project1-demo",
-            "demo": "https://example.com/project1-demo",
-            "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur architecto neque eum exercitationem perspiciatis omnis, laudantium corporis adipisci, sunt earum animi ab dolor. Quaerat praesentium explicabo eveniet iste suscipit repudiandae.",
-            "features": [
-                "Feature 1: Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-                "Feature 2: Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-                "Feature 3: Lorem ipsum dolor sit amet consectetur adipisicing elit."
-            ],
-            "references": [
-                {
-                    "title": "Reference 1",
-                    "url": "https://example.com/reference1"
-                },
-                {
-                    "title": "Reference 2",
-                    "url": "https://example.com/reference2"
-                }
-            ]
+            "slug": "department-polinema",
+            "demo_url": "",
+            "source_code_url": "",
+            "detail": "/markdown/department-polinema.md"
         },
         {
-            "title": "Sistem Informasi Politeknik Negeri Malang",
-            "image": "https://lh4.googleusercontent.com/DzNngvGh7KkBNbrREmEE-6mEbSlVl7Vkm7JB1CUybacupHyC4xFGyUz2SW51r3pCpUp_R72GPjC9u0ifC8V0kg6lPMpsD7AUQH7VkZ-xht7Z0NZUodICX5VI4zHfca5yltqVPgXLhKc",
+            "title": "PPID Politeknik Negeri Malang",
+            "description": "A website providing transparency in public information by offering easy and comprehensive access to information about activities, documents, and procedures related to Politeknik Negeri Malang.",
+            "image": "/images/projects/ppid-polinema/ppid-polinema.webp",
             "tools": [
-                "Laravel",
-                "Bootstrap",
-                "MySQL",
-                "Nginx"
+                "WordPress",
+                "Elementor"
             ],
-            "description": "Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa.",
-            "slug": "sisfo-polinema",
-            "source_code": "https://example.com/project1-demo",
-            "demo": "https://example.com/project1-demo",
-            "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur architecto neque eum exercitationem perspiciatis omnis, laudantium corporis adipisci, sunt earum animi ab dolor. Quaerat praesentium explicabo eveniet iste suscipit repudiandae.",
-            "features": [
-                "Feature 1: Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-                "Feature 2: Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-                "Feature 3: Lorem ipsum dolor sit amet consectetur adipisicing elit."
-            ],
-            "references": [
-                {
-                    "title": "Reference 1",
-                    "url": "https://example.com/reference1"
-                },
-                {
-                    "title": "Reference 2",
-                    "url": "https://example.com/reference2"
-                }
-            ]
+            "slug": "ppid-polinema",
+            "demo_url": "https://ppid.polinema.ac.id/",
+            "source_code_url": "",
+            "detail": "/markdown/ppid-polinema.md"
         },
         {
-            "title": "Project 4",
-            "image": "https://www.uxdesigninstitute.com/blog/wp-content/uploads/2022/06/34_Builtin-1.png",
+            "title": "EasyCook",
+            "description": "Recipe recommendation system that suggests dishes based on available ingredients and user preferences.",
+            "image": "/images/projects/easycook/easycook.webp",
             "tools": [
-                "Python",
                 "Django",
-                "MySQL",
-                "Nginx"
+                "Vue.js"
             ],
-            "description": "Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa. Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa. ",
-            "slug": "project-dummy-4",
-            "demo": "https://example.com/project2-demo",
-            "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur architecto neque eum exercitationem perspiciatis omnis, laudantium corporis adipisci, sunt earum animi ab dolor. Quaerat praesentium explicabo eveniet iste suscipit repudiandae."
+            "slug": "easycook",
+            "source_code_url": "https://gitlab.com/nargyanti/easycookapi",
+            "demo_url": "",
+            "detail": "/markdown/easycook.md"
         },
         {
-            "title": "Project 5",
-            "image": "https://glints.com/id/lowongan/wp-content/uploads/2020/07/uimovement.jpg",
+            "title": "E-Learning for Vocational High School",
+            "description": "E-learning platform that provides a comprehensive learning experience for students and teachers, including online courses, quizzes, and assignments.",
+            "image": "/images/projects/e-learning/e-learning.webp",
             "tools": [
-                "Python",
-                "Django",
-                "MySQL",
-                "Nginx"
+                "Laravel",
+                "Bootstrap",
+                "MySQL"
             ],
-            "description": "Deskripsikan secara singkat nama project dalam 1-2 kalimat. Jelaskan projectnya tentang apa dan untuk siapa.",
-            "slug": "project-dummy-3",
-            "demo": "https://example.com/project2-demo",
-            "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur architecto neque eum exercitationem perspiciatis omnis, laudantium corporis adipisci, sunt earum animi ab dolor. Quaerat praesentium explicabo eveniet iste suscipit repudiandae."
+            "slug": "e-learning",
+            "source_code_url": "",
+            "demo_url": "",
+            "detail": "/markdown/e-learning.md"
+        },
+        {
+            "title": "ANTI ManDec",
+            "description": "A website that reports the arrival and departure schedules of transportation at TPI Ngurah Rai.",
+            "image": "/images/projects/anti-mandec/anti-mandec.webp",
+            "tools": [
+                "Laravel",
+                "Bootstrap",
+                "MySQL"
+            ],
+            "slug": "anti-mandec",
+            "source_code_url": "",
+            "demo_url": "",
+            "detail": "/markdown/anti-mandec.md"
+        },
+        {
+            "title": "Quarter Life Projects Mentoring System",
+            "description": "A platform connecting mentees with mentors to schedule mentoring sessions efficiently.",
+            "image": "/images/projects/mentoring-qlp/mentoring-qlp.webp",
+            "tools": [
+                "Laravel",
+                "Bootstrap",
+                "MySQL"
+            ],
+            "slug": "mentoring-qlp",
+            "source_code_url": "",
+            "demo_url": "",
+            "detail": "/markdown/mentoring-qlp.md"
+        },
+        {
+            "title": "ALS TOEFL Prediction",
+            "description": "The website offers TOEFL prediction tests and provides score results immediately after the test.",
+            "image": "/images/projects/als-toefl-prediction/als-toefl-prediction.webp",
+            "tools": [
+                "CodeIgniter",
+                "Bootstrap",
+                "MySQL"
+            ],
+            "slug": "als-toefl-prediction",
+            "source_code_url": "",
+            "demo_url": "",
+            "detail": "/markdown/als-toefl-prediction.md"
+        },
+        {
+            "title": "Pap'a Catering",
+            "description": "Dedicated platform for managing catering orders, products, invoices, and financial transactions, designed specifically for Panti Asuhan Putri Aisyiyah Malang.",
+            "image": "/images/projects/papa-catering/papa-catering.webp",
+            "tools": [
+                "Laravel",
+                "Bootstrap",
+                "MySQL"
+            ],
+            "slug": "papa-catering",
+            "source_code_url": "",
+            "demo_url": "",
+            "detail": "/markdown/papa-catering.md"
         }
     ]
 }

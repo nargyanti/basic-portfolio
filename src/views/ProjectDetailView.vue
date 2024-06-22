@@ -44,14 +44,15 @@ onMounted(async () => {
                     </p>
                 </div>
                 <div v-if="project.source_code_url || project.demo_url" class="flex gap-4">
-                    <ExternalLink v-if="project.source_code_url" :url="project.source_code_url">
-                        <PrimaryButton>Source code</PrimaryButton>
-                    </ExternalLink>
                     <ExternalLink v-if="project.demo_url" :url="project.demo_url">
-                        <SecondaryButton>View demo</SecondaryButton>
+                        <PrimaryButton>Visit Website</PrimaryButton>
+                    </ExternalLink>
+                    <ExternalLink v-if="project.source_code_url" :url="project.source_code_url">
+                        <SecondaryButton>Source code</SecondaryButton>
                     </ExternalLink>
                 </div>
-                <img class="w-full object-cover rounded-lg w-3/4" :src="project.image" :alt="project.title" />
+                <img v-if="project.image" class="w-full object-cover rounded-lg w-3/4" :src="project.image"
+                    :alt="project.title" />
             </div>
         </section>
 

@@ -84,8 +84,7 @@ const { profile, education, technical_skills, work_experience, projects } =
         <div class="mx-auto max-w-screen-xl">
             <SectionTitle>Project Showcase</SectionTitle>
             <p class="pt-3 text-gray-700">
-                These are projects I've completed, providing effective solutions
-                to diverse problems.
+                These are projects I've developed, providing effective solutions to diverse problems.
             </p>
 
             <div class="flex flex-col items-center pt-8">
