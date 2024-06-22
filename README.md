@@ -20,7 +20,7 @@ Check out the live demo of the portfolio [here](https://nargyanti.github.io).
 -   **Responsive Design**: Works on all devices - mobile, tablet, and desktop.
 -   **Modern UI**: Built with Tailwind CSS for a sleek, modern look.
 -   **Single Page Application**: Fast and responsive single-page application using Vue.js.
--   **Portfolio Showcase**: Display the projects and skills, written with `marked.js` for easy Markdown formatting.
+-   **Portfolio Showcase**: Display the projects and skills.
 -   **Contact**: Users can reach out via email.
 
 ## Installation
@@ -77,7 +77,3 @@ Contributions are what make the open source community such an amazing place to l
 ### License
 
 Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
-
----
-
-This project is a part of my personal portfolio. You can check out more of my work at https://nargyanti.github.io

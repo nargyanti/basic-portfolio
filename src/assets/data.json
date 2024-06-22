@@ -83,124 +83,92 @@
         {
             "title": "Politeknik Negeri Malang's Official Website",
             "description": "Informative platform providing comprehensive information about academic programs, academic activities, and the latest news related to Politeknik Negeri Malang.",
-            "image": "https://i.pinimg.com/736x/3f/a3/6f/3fa36fffb537f3a19ce7af2458ed48e4.jpg",
-            "tools": [
-                "WordPress",
-                "Elementor"
-            ],
-            "slug": "polinema",
-            "demo_url": "",
-            "source_code_url": "",
-            "detail": "/markdown/polinema.md"
+            "image": "/images/projects/polinema.webp",
+            "tools": {
+                "wordpress": "https://wordpress.org/",
+                "elementor": "https://elementor.com/"
+            },
+            "url": ""
         },
         {
             "title": "Politeknik Negeri Malang's Department Website",
             "description": "Informative platform providing comprehensive information about academic programs, academic activities, and the latest news related to the department at Politeknik Negeri Malang.",
-            "image": "/images/projects/department-polinema/department-polinema.webp",
-            "tools": [
-                "WordPress",
-                "Elementor"
-            ],
-            "slug": "department-polinema",
-            "demo_url": "",
-            "source_code_url": "",
-            "detail": "/markdown/department-polinema.md"
+            "image": "/images/projects/department-polinema.webp",
+            "tools": {
+                "wordpress": "https://wordpress.org/",
+                "elementor": "https://elementor.com/"
+            },
+            "url": ""
         },
         {
             "title": "PPID Politeknik Negeri Malang",
             "description": "A website providing transparency in public information by offering easy and comprehensive access to information about activities, documents, and procedures related to Politeknik Negeri Malang.",
-            "image": "/images/projects/ppid-polinema/ppid-polinema.webp",
-            "tools": [
-                "WordPress",
-                "Elementor"
-            ],
-            "slug": "ppid-polinema",
-            "demo_url": "https://ppid.polinema.ac.id/",
-            "source_code_url": "",
-            "detail": "/markdown/ppid-polinema.md"
+            "image": "/images/projects/ppid-polinema.webp",
+            "tools": {
+                "wordpress": "https://wordpress.org/",
+                "elementor": "https://elementor.com/"
+            },
+            "url": "https://ppid.polinema.ac.id/"
         },
         {
             "title": "EasyCook",
             "description": "Recipe recommendation system that suggests dishes based on available ingredients and user preferences.",
-            "image": "/images/projects/easycook/easycook.webp",
-            "tools": [
-                "Django",
-                "Vue.js"
-            ],
-            "slug": "easycook",
-            "source_code_url": "https://gitlab.com/nargyanti/easycookapi",
-            "demo_url": "",
-            "detail": "/markdown/easycook.md"
+            "image": "/images/projects/easycook.webp",
+            "tools": {
+                "django": "https://www.djangoproject.com/",
+                "vuedotjs": "https://vuejs.org/"
+            },
+            "url": "https://gitlab.com/nargyanti/easycookapi"
         },
         {
             "title": "E-Learning for Vocational High School",
             "description": "E-learning platform that provides a comprehensive learning experience for students and teachers, including online courses, quizzes, and assignments.",
-            "image": "/images/projects/e-learning/e-learning.webp",
-            "tools": [
-                "Laravel",
-                "Bootstrap",
-                "MySQL"
-            ],
-            "slug": "e-learning",
-            "source_code_url": "",
-            "demo_url": "",
-            "detail": "/markdown/e-learning.md"
+            "image": "/images/projects/e-learning.webp",
+            "tools": {
+                "laravel": "https://laravel.com/",
+                "bootstrap": "https://getbootstrap.com/"
+            },
+            "url": ""
         },
         {
             "title": "ANTI ManDec",
             "description": "A website that reports the arrival and departure schedules of transportation at TPI Ngurah Rai.",
-            "image": "/images/projects/anti-mandec/anti-mandec.webp",
-            "tools": [
-                "Laravel",
-                "Bootstrap",
-                "MySQL"
-            ],
-            "slug": "anti-mandec",
-            "source_code_url": "",
-            "demo_url": "",
-            "detail": "/markdown/anti-mandec.md"
+            "image": "/images/projects/anti-mandec.webp",
+            "tools": {
+                "laravel": "https://laravel.com/",
+                "bootstrap": "https://getbootstrap.com/"
+            },
+            "url": ""
         },
         {
             "title": "Quarter Life Projects Mentoring System",
             "description": "A platform connecting mentees with mentors to schedule mentoring sessions efficiently.",
-            "image": "/images/projects/mentoring-qlp/mentoring-qlp.webp",
-            "tools": [
-                "Laravel",
-                "Bootstrap",
-                "MySQL"
-            ],
-            "slug": "mentoring-qlp",
-            "source_code_url": "",
-            "demo_url": "",
-            "detail": "/markdown/mentoring-qlp.md"
+            "image": "/images/projects/mentoring-qlp.webp",
+            "tools": {
+                "laravel": "https://laravel.com/",
+                "bootstrap": "https://getbootstrap.com/"
+            },
+            "url": "https://github.com/nargyanti/mentoring-qlp"
         },
         {
             "title": "ALS TOEFL Prediction",
             "description": "The website offers TOEFL prediction tests and provides score results immediately after the test.",
-            "image": "/images/projects/als-toefl-prediction/als-toefl-prediction.webp",
-            "tools": [
-                "CodeIgniter",
-                "Bootstrap",
-                "MySQL"
-            ],
-            "slug": "als-toefl-prediction",
-            "source_code_url": "",
-            "demo_url": "",
-            "detail": "/markdown/als-toefl-prediction.md"
+            "image": "/images/projects/als-toefl-prediction.webp",
+            "tools": {
+                "codeigniter": "https://codeigniter.com/",
+                "bootstrap": "https://getbootstrap.com/"
+            },
+            "url": ""
         },
         {
             "title": "Pap'a Catering",
             "description": "Dedicated platform for managing catering orders, products, invoices, and financial transactions, designed specifically for Panti Asuhan Putri Aisyiyah Malang.",
-            "image": "/images/projects/papa-catering/papa-catering.webp",
-            "tools": [
-                "Laravel",
-                "Bootstrap",
-                "MySQL"
-            ],
-            "slug": "papa-catering",
-            "source_code_url": "",
-            "demo_url": "",
-            "detail": "/markdown/papa-catering.md"
+            "image": "/images/projects/papa-catering.webp",
+            "tools": {
+                "laravel": "https://laravel.com/",
+                "bootstrap": "https://getbootstrap.com/"
+            },
+            "url": "https://github.com/nargyanti/papa-catering"
         }
     ]
 }

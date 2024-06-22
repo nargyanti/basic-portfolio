@@ -91,8 +91,8 @@ const { profile, education, technical_skills, work_experience, projects } =
                 <div class="grid gap-x-7 gap-y-7 pt-3 md:grid-cols-2 lg:grid-cols-3">
                     <!-- Project -->
                     <ProjectCard v-for="(project, index) in projects" :key="index" :image="project.image"
-                        :tags="project.tags" :title="project.title" :description="project.description"
-                        :slug="project.slug" />
+                        :tools="project.tools" :title="project.title" :description="project.description"
+                        :url="project.url" />
                 </div>
             </div>
         </div>
