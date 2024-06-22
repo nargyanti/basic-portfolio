@@ -96,7 +96,7 @@
         {
             "title": "Politeknik Negeri Malang's Department Website",
             "description": "Informative platform providing comprehensive information about academic programs, academic activities, and the latest news related to the department at Politeknik Negeri Malang.",
-            "image": "/images/projects/department-polinema/department-polinema.webp",
+            "image": "",
             "tools": [
                 "WordPress",
                 "Elementor"
@@ -104,12 +104,12 @@
             "slug": "department-polinema",
             "demo_url": "",
             "source_code_url": "",
-            "detail": "/markdown/department-polinema.md"
+            "detail": ""
         },
         {
             "title": "PPID Politeknik Negeri Malang",
             "description": "A website providing transparency in public information by offering easy and comprehensive access to information about activities, documents, and procedures related to Politeknik Negeri Malang.",
-            "image": "/images/projects/ppid-polinema/ppid-polinema.webp",
+            "image": "",
             "tools": [
                 "WordPress",
                 "Elementor"
@@ -117,12 +117,12 @@
             "slug": "ppid-polinema",
             "demo_url": "https://ppid.polinema.ac.id/",
             "source_code_url": "",
-            "detail": "/markdown/ppid-polinema.md"
+            "detail": ""
         },
         {
             "title": "EasyCook",
             "description": "Recipe recommendation system that suggests dishes based on available ingredients and user preferences.",
-            "image": "/images/projects/easycook/easycook.webp",
+            "image": "",
             "tools": [
                 "Django",
                 "Vue.js"
@@ -130,12 +130,12 @@
             "slug": "easycook",
             "source_code_url": "https://gitlab.com/nargyanti/easycookapi",
             "demo_url": "",
-            "detail": "/markdown/easycook.md"
+            "detail": ""
         },
         {
             "title": "E-Learning for Vocational High School",
             "description": "E-learning platform that provides a comprehensive learning experience for students and teachers, including online courses, quizzes, and assignments.",
-            "image": "/images/projects/e-learning/e-learning.webp",
+            "image": "",
             "tools": [
                 "Laravel",
                 "Bootstrap",
@@ -144,7 +144,7 @@
             "slug": "e-learning",
             "source_code_url": "",
             "demo_url": "",
-            "detail": "/markdown/e-learning.md"
+            "detail": ""
         },
         {
             "title": "ANTI ManDec",
@@ -158,12 +158,12 @@
             "slug": "anti-mandec",
             "source_code_url": "",
             "demo_url": "",
-            "detail": "/markdown/anti-mandec.md"
+            "detail": ""
         },
         {
             "title": "Quarter Life Projects Mentoring System",
             "description": "A platform connecting mentees with mentors to schedule mentoring sessions efficiently.",
-            "image": "/images/projects/mentoring-qlp/mentoring-qlp.webp",
+            "image": "",
             "tools": [
                 "Laravel",
                 "Bootstrap",
@@ -172,12 +172,12 @@
             "slug": "mentoring-qlp",
             "source_code_url": "",
             "demo_url": "",
-            "detail": "/markdown/mentoring-qlp.md"
+            "detail": ""
         },
         {
             "title": "ALS TOEFL Prediction",
             "description": "The website offers TOEFL prediction tests and provides score results immediately after the test.",
-            "image": "/images/projects/als-toefl-prediction/als-toefl-prediction.webp",
+            "image": "",
             "tools": [
                 "CodeIgniter",
                 "Bootstrap",
@@ -186,12 +186,12 @@
             "slug": "als-toefl-prediction",
             "source_code_url": "",
             "demo_url": "",
-            "detail": "/markdown/als-toefl-prediction.md"
+            "detail": ""
         },
         {
             "title": "Pap'a Catering",
             "description": "Dedicated platform for managing catering orders, products, invoices, and financial transactions, designed specifically for Panti Asuhan Putri Aisyiyah Malang.",
-            "image": "/images/projects/papa-catering/papa-catering.webp",
+            "image": "",
             "tools": [
                 "Laravel",
                 "Bootstrap",
@@ -200,7 +200,7 @@
             "slug": "papa-catering",
             "source_code_url": "",
             "demo_url": "",
-            "detail": "/markdown/papa-catering.md"
+            "detail": ""
         }
     ]
 }
