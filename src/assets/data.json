@@ -52,8 +52,18 @@
     "work_experience": [
         {
             "icon": "ic:sharp-home-work",
+            "title": "IT Staff at PT Semangat Bersama Entrepreneurship",
+            "period": "July 2024 - now",
+            "jobdesk": [
+                "Designed system requirements based on user needs to ensure an efficient and effective system",
+                "Developed Laravel-based web applications to manage seed production data, covering the entire process from cultivation to production",
+                "Performed routine maintenance and troubleshooting of web applications to ensure optimal availability and functionality for users"
+            ]
+        },
+        {
+            "icon": "ic:sharp-home-work",
             "title": "Programmer at UPA TIK Politeknik Negeri Malang",
-            "period": "September 2023 - June 2024",
+            "period": "September 2023 - July 2024",
             "jobdesk": [
                 "Redesigned the profile website of Politeknik Negeri Malang and its departments to enhance user experience and facilitate information delivery using WordPress and Elementor",
                 "Developed the PPID website for Politeknik Negeri Malang to ensure public information transparency using WordPress and Elementor",
@@ -80,6 +90,16 @@
         }
     ],
     "projects": [
+        {
+            "title": "MTani Information System",
+            "description": "An information system designed to store, manage, and generate reports for seed production management, covering the entire process from seed cultivation to production.",
+            "image": "/images/projects/si-mtani.webp",
+            "tools": {
+                "laravel": "https://laravel.com/",
+                "bootstrap": "https://getbootstrap.com/"
+            },
+            "url": ""
+        },
         {
             "title": "Politeknik Negeri Malang's Official Website",
             "description": "Informative platform providing comprehensive information about academic programs, academic activities, and the latest news related to Politeknik Negeri Malang.",
